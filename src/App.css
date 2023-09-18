@@ -36,3 +36,63 @@
     transform: rotate(360deg);
   }
 }
+.t-underline {
+  border-bottom-width: 0;
+  background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
+  background-size: 0 3px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size .5s ease-in-out;
+}
+
+.t-underline-black {
+  background-image: linear-gradient(transparent, transparent), linear-gradient(rgb(219, 174, 50), rgb(219, 174, 50))
+}
+
+.t-underline:hover {
+  background-size: 100% 3px;
+  background-position: 0 100%
+}
+
+.hpage{
+  background-image: url('./img/img-sub/banner-02.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.tpage{
+  background-image: url('./img/img-sub/nails-tech-background.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.gpage{
+  background-image: url('./img/img-sub/banner-03.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.test{
+  position: absolute;
+  top: 54%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.test1{
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.spage{
+  background-image: url('./img/img-sub/background-01.jpg');
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+.cpage{
+  background-image: url('./img/img-sub/banner-01.jpg');
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
