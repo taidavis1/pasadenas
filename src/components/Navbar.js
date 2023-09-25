@@ -18,17 +18,17 @@ function Navbar(){
     const Icon_Style = {fontSize: '22',};
     return (
         <div className="">
-            <nav className= {Scroll?"bg-white/50 flex justify-between p-4 lg:justify-around lg:py-4  backdrop-blur-md shadow-md w-full fixed top-0 left-0 right-0 z-10 ":"flex justify-between p-4 lg:justify-around lg:py-4 bg-black backdrop-blur-md shadow-md w-full fixed top-0 left-0 right-0 z-10"}>
+            <nav className= {Scroll?"bg-white/80 flex justify-between p-4 lg:justify-around lg:py-4  backdrop-blur-md shadow-md w-full fixed top-0 left-0 right-0 z-10 ":"flex justify-between p-4 lg:justify-around lg:py-4 bg-[#EAB2BB]/80 backdrop-blur-md w-full fixed top-0 left-0 right-0 z-10"}>
                 <div className="flex items-center cursor-pointer group">
-                    <img src={Logo} alt="" className="w-20 md:w-32 group-hover:opacity-70"/>
+                    <img src={Logo} alt="" className="w-32 md:w-40 group-hover:opacity-70"/>
                 </div>
-                <div onClick={() => setClick(!Click)} className={Scroll?"lg:hidden blkock text-3xl cursor-pointer flex items-center text-b;acl": "lg:hidden blkock text-3xl cursor-pointer flex items-center text-white"}>
+                <div onClick={() => setClick(!Click)} className={Scroll?"lg:hidden blkock text-3xl cursor-pointer flex items-center text-b;acl": "lg:hidden blkock text-3xl cursor-pointer flex items-center text-[#3C6CA8]"}>
                 {!Click? 
                     <FontAwesomeIcon className="" icon = {faBarsStaggered}/> : 
                     <FontAwesomeIcon className="" icon={faXmark} />
                 }
                 </div>
-                <div className= {Scroll? "lg:flex text-md hidden items-center space-x-12 font-new-font text-xl capitalize text-black" : "lg:flex text-md hidden items-center space-x-12 font-new-font text-xl capitalize text-white" }>
+                <div className= {Scroll? "lg:flex text-md hidden items-center space-x-12 font-new-font text-xl capitalize text-black" : "lg:flex text-md hidden items-center space-x-12 font-new-font text-xl capitalize text-[#3C6CA8]" }>
                     <a className="flex t-underline t-underline-black border-b-yellow-500 " href = "/">
                         Home
                     </a>

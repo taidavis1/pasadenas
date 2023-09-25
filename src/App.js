@@ -10,7 +10,7 @@ import {Route , Routes} from 'react-router-dom';
 
 function App() {
   return (
-    <main className='!bg-black'>
+    <main className='!bg-black font-Poppins'>
       <Navbar />
       <Routes>
         <Route path='/' element = {<Home/>}></Route>

@@ -19,7 +19,8 @@ module.exports = {
           'Rouge': ['Rouge Script','cursive'],
           'Han-Sans': ['Black Han Sans', 'sans-serif'],
           'Monterast' :['Montserrat',' sans-serif'],
-          'Gruppo': ['Gruppo', 'sans-serif']
+          'Gruppo': ['Gruppo', 'sans-serif'],
+          'PlayFair': ['Playfair Display', 'serif'],
         },
         colors:{
           'ser-color': '#ffe4b0',

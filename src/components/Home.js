@@ -14,15 +14,15 @@ function importImg(r){
 function Home(){
     const fnames = importImg(require.context('../img/img-nail/img-new/' , false , /\.(png|jpg|jpeg)$/));
     return (
-        <section className="relative overflow-x-hidden space-y-6">
+        <section className="bg-[#EAB2BB] relative overflow-x-hidden space-y-2 md:space-y-6">
             <div className="hpage w-screen h-screen relative">
                 <Fade cascade delay={150}>
-                    <div className="test w-full px-3 md:w-1/2 py-5 space-y-3 lg:py-8 md:space-y-6 text-center  bg-black/10 block shadow-md shadow-black">
+                    <div className="absolute lg:top-1/3 lg:right-1/4 top-28 right-4 w-full px-3 py-5 space-y-3 lg:py-8 md:space-y-6 text-center">
                         <div className="">
-                            <h1 className="text-2xl text-yellow-100 md:text-5xl font-Monterast tracking-widest whitespace-nowrap font-extrabold italic">Nails Tech</h1>
+                            <h1 className="text-4xl ml-4 text-[#3C6CA8] md:text-6xl tracking-widest whitespace-nowrap font-extrabold italic">Nails Tech</h1>
                         </div>
                         <div className="flex justify-center ">
-                            <ul className=" text-black space-y-2 font-extrabold ">
+                            <ul className=" text-white space-y-2 font-light">
                                 <li>
                                     <h2 className="text-sm md:text-xl tracking-wide">YOU CAN'T BUY HAPPINESS</h2>
                                 </li>
@@ -37,34 +37,30 @@ function Home(){
                         <button onClick={(e) => {
                             e.preventDefault();
                             window.open('https://www.lldtek.com/salon/appt/NTU1NDB8bmFpbHN0ZWNoODh8TURfMDg1Mzh8ZDQ3YmQ2OTJjMzVmYWIzZDgzOTllMjBjNzUyMjhkYmI=' , '_blank');
-                        }} className="hover:bg-black uppercase md:text-lg text-sm py-2 px-4 group cursor-pointer md:px-12 border-black border-2 font-serif md:tracking-wide">
-                            <a className = "group-hover:text-white ">Book Appointment</a>
+                        }} className="hover:bg-white rounded-full uppercase md:text-lg text-white text-sm py-2 px-4 group cursor-pointer md:px-12 bg-[#3C6CA8] md:tracking-wide">
+                            <a className = "group-hover:text-[#3C6CA8] text-[#EAB2BB] font-extrabold ">Book Appointment</a>
                         </button>
                     </div>
                 </Fade>
             </div>
-            <div className="p-6 mx-auto bg-black">
+            <hr></hr>
+            <div className="p-6 mx-auto ">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                     <CarouselHome />
                     <Slide direction="right" delay={200}>
-                        <div className="items-center text-white md:mt-8 flex flex-col md:space-y-8 space-y-3 tracking-wider">
+                        <div className="items-center  text-black md:mt-8 flex flex-col md:space-y-8 space-y-5 tracking-wider">
                             <div>
-                                <h1 className = "border-b-2 border-white/80 text-lg italic font-Monterast text-yellow-200 md:text-4xl capitalize font-bold">Who we are ?</h1>
+                                <h1 className = "border-b-2 border-white/80 lg:mt-24 text-3xl italic text-[#3C6CA8] md:text-6xl capitalize font-bold">Who we are ?</h1>
                             </div>
-                            <div className="md:w-3/4 text-center text-sm md:text-lg ">
+                            <div className="md:w-3/4 text-[#3C6CA8] text-center text-lg md:text-2xl ">
                                 <h2 className="">Nails Tech is a premier nail and spa salon in Pasadenas that offers a wide variety of nail services for men and women. Our team of highly trained and experienced technicians use only the highest quality products to create beautiful, long-lasting nails. We are committed to providing our clients with a luxurious and relaxing experience, from the moment they walk in the door to the moment they leave.</h2>
-                            </div>
-                            <div className="md:w-3/4 text-center  text-sm md:text-lg ">
-                                <h2>
-                                    Our mission is to be the go-to nail and spa salon for those who want to unwind and rejuvenate. We are committed to providing the highest quality service and sanitation, and our technicians are constantly being trained to bring you the latest trends and techniques.
-                                </h2>
                             </div>
                             <div className="flex flex-col text-center space-y-1 md:space-y-4">
                                 <div>
-                                    <h1 className="font-Han-Sans tracking-wider text-lg md:text-2xl italic">Location :</h1>
+                                    <h1 className="tracking-wider text-[#3C6CA8] text-2xl md:text-4xl italic">Location :</h1>
                                 </div>
-                                <div className="text-md md:text-lg font-Roboto t-underline t-underline-black ">
-                                    <a className="text-sky-300 md:text-yellow-200" target="_blank"  rel="noreferrer" href="https://www.google.com/maps/dir//NAILS+TECH,+3201+Mountain+Rd+Suite+111,+Pasadena,+MD+21122/@39.125234,-76.5347105,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x89b7feb081c4ffd5:0xc692714eadeeba94!2m2!1d-76.5347105!2d39.125234?entry=ttu">
+                                <div className="text-lg md:text-2xl t-underline t-underline-black ">
+                                    <a className="text-black underline md:no-underline" target="_blank"  rel="noreferrer" href="https://www.google.com/maps/dir//NAILS+TECH,+3201+Mountain+Rd+Suite+111,+Pasadena,+MD+21122/@39.125234,-76.5347105,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x89b7feb081c4ffd5:0xc692714eadeeba94!2m2!1d-76.5347105!2d39.125234?entry=ttu">
                                         NAILS TECH, 3201 Mountain Rd Suite 111, Pasadena, MD 21122
                                     </a>
                                 </div>
@@ -73,19 +69,20 @@ function Home(){
                     </Slide>
                 </div>
             </div>
+            <hr></hr>
             <Fade triggerOnce delay={500} direction="left">
-                <div className="bg-white p-8 lg:px-28 relative space-y-7 lg:space-y-12">
-                    <div className="flex justify-center text-lg lg:text-4xl">
-                        <h1 className = "border-b-2 border-yellow-500/80 text-lg italic font-Monterast text-black md:text-4xl capitalize font-bold">What we Do ?</h1>
+                <div className=" p-4 lg:px-28 relative space-y-7 lg:space-y-12">
+                    <div className="flex justify-center lg:text-4xl">
+                        <h1 className = "border-b-2 border-yellow-500/80 text-3xl italic text-[#3C6CA8] md:text-6xl capitalize font-bold">What we Do ?</h1>
                     </div>
                     <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 justify-items-center gap-2 lg:gap-y-10 lg:gap-x-5 cursor-pointer">
                         <div className="max-w-sm shadow-lg rounded-lg mb-2 ease-in-out transition-all duration-1000 lg:hover:scale-105">
                             <div className="overflow-hidden">
                                 <img src={manicure} alt="#" className="w-full" />
                             </div>
-                            <div className="text-center px-6 py-4 space-y-2 mb-4">
-                                <h1 className=" md:text-xl uppercase font-serif border-b-2 border-yellow-500/80">Manicure</h1>
-                                <ul className=" text-md space-y-2  list-disc list-inside">
+                            <div className="text-center px-6 py-4 space-y-4 mb-4">
+                                <h1 className=" text-lg md:text-xl text-[#3C6CA8] uppercase border-b-2 font-semibold border-yellow-500/80">Manicure</h1>
+                                <ul className=" text-md font-bold space-y-2  list-disc list-inside">
                                     <li>Our manicure services will leave your nails looking and feeling their best</li>
                                     <li>We offer a variety of manicure options to choose from, so you can find the perfect one for your needs</li>
                                     <li>Our experienced nail technicians will take the time to pamper your hands and nails, leaving you feeling relaxed and confident.</li>
@@ -96,9 +93,9 @@ function Home(){
                             <div className="overflow-hidden">
                                 <img src={pedicure} alt="#" className="w-full" />
                             </div>
-                            <div className="text-center space-y-2 px-6 py-4 mb-4">
-                                <h1 className="font-serif md:text-xl uppercase border-b-2 border-yellow-500/80">Pedicure</h1>
-                                <ul className="text-md space-y-2 list-disc list-inside">
+                            <div className="text-center px-6 py-4 space-y-4 mb-4">
+                                <h1  className="text-lg md:text-xl text-[#3C6CA8] uppercase border-b-2 font-semibold border-yellow-500/80">Pedicure</h1>
+                                <ul className=" text-md font-bold space-y-2  list-disc list-inside">
                                     <li>Our pedicure services will leave your feet and toes feeling refreshed and rejuvenated</li>
                                     <li>We offer a variety of pedicure options to choose from, so you can find the perfect one for your needs.</li>
                                     <li>Our experienced nail technicians will take the time to pamper your feet, leaving you feeling relaxed and confident.</li>
@@ -109,9 +106,9 @@ function Home(){
                             <div className="overflow-hidden">
                                 <img src={polish} alt="#" className="w-full" />
                             </div>
-                            <div className="text-center space-y-2 px-6 py-4 mb-4">
-                                <h1 className="font-serif md:text-xl uppercase border-b-2 border-yellow-500/80">Polish Change</h1>
-                                <ul className=" text-md space-y-2 list-disc list-inside">
+                            <div className="text-center px-6 py-4 space-y-4 mb-4">
+                                <h1  className="text-lg md:text-xl text-[#3C6CA8] uppercase border-b-2 font-semibold border-yellow-500/80">Polish Change</h1>
+                                <ul className=" text-md font-bold space-y-2  list-disc list-inside">
                                     <li>Our nail polish change services will leave your nails looking and feeling their best.</li>
                                     <li>We offer a wide variety of nail polish colors and styles to choose from, so you can find the perfect one for your preferences.</li>
                                     <li>Our experienced nail technicians will take the time to pamper your nails and ensure they look absolutely fabulous.</li>
@@ -122,9 +119,9 @@ function Home(){
                             <div className="overflow-hidden">
                                 <img src={waxing} alt="#" className="w-full" />
                             </div>
-                            <div className="text-center space-y-2 px-6 py-4 mb-4">
-                                <h1 className="font-serif md:text-xl uppercase border-b-2 border-yellow-500/80">Waxing</h1>
-                                <ul className="text-md space-y-2  list-disc list-inside">
+                            <div className="text-center px-6 py-4 space-y-4 mb-4">
+                                <h1  className="text-lg md:text-xl text-[#3C6CA8] uppercase border-b-2 font-semibold border-yellow-500/80">Waxing</h1>
+                                <ul className=" text-md font-bold space-y-2  list-disc list-inside">
                                     <li>Our waxing services will leave you with smooth, hair-free skin that you'll love.</li>
                                     <li>We offer a variety of waxing options to choose from, so you can find the perfect one for your needs.</li>
                                     <li>Our experienced technicians will take the time to make you feel comfortable and relaxed, and our results will last for weeks.</li>
@@ -136,8 +133,8 @@ function Home(){
                                 <img src={eyelash} alt="#" className="w-full" />
                             </div>
                             <div className="text-center space-y-2 px-6 py-4 mb-4">
-                                <h1 className="font-serif md:text-xl uppercase border-b-2 border-yellow-500/80">Eyelash Extension</h1>
-                                <ul className=" text-md space-y-2 list-disc list-inside">
+                                <h1  className="text-lg md:text-xl text-[#3C6CA8] uppercase border-b-2 font-semibold border-yellow-500/80">Eyelash Extension</h1>
+                                <ul className=" text-md font-bold space-y-2  list-disc list-inside">
                                     <li>Enhance your natural beauty with our eyelash extension services.</li>
                                     <li>Our skilled technicians offer a range of eyelash styles and lengths to choose from, allowing you to achieve the perfect look for your eyes.</li>
                                     <li>Indulge in the art of eyelash extensions, and let us create a stunning, long-lasting result that will leave you feeling confident and glamorous.</li>
@@ -146,16 +143,17 @@ function Home(){
                         </div>
                     </div>
                     <div className="flex justify-center">
-                        <button className="shadow-md text-sm hover:bg-black ease-in-out transition  duration-100 hover:scale-105 md:text-2xl group cursor-pointer px-4 md:px-16 py-2 border-black border-2 uppercase font-serif tracking-wide">
-                            <a href="/Services" className="group-hover:text-white font-Poppins">View More Services!</a>
+                        <button className="shadow-md md:border-black md:text-black text-white hover:bg-black ease-in-out transition  duration-100 hover:scale-105 md:text-2xl group cursor-pointer px-4 md:px-16 py-2 border-white border-2 uppercase tracking-wide">
+                            <a href="/Services" className="group-hover:text-white text-lg font-Poppins">View More Services!</a>
                         </button>
                     </div>
                 </div>
             </Fade>
+            <hr></hr>
             <Fade triggerOnce delay={500} direction="left">
-                <div className="bg-black p-8 lg:px-28 relative space-y-7 lg:space-y-12">
+                <div className="p-8 lg:px-28 relative space-y-7 lg:space-y-12">
                     <div className="flex justify-center text-lg lg:text-4xl">
-                        <h1 className = "border-b-2 border-white-500/80 text-2xl italic font-Monterast text-yellow-200 md:text-4xl capitalize font-bold">Our Customer Reviews</h1>
+                        <h1 className = "border-b-2 border-white-500/80 text-2xl italic text-[#3C6CA8] md:text-6xl capitalize font-bold">Our Customer Reviews</h1>
                     </div>
                     <div class="grid border-none gap-8 text-center md:grid-cols-2 lg:grid-cols-4">
                         {user_data.map((people ,) => (
@@ -229,20 +227,20 @@ function Home(){
                 </div>
             </Fade>
             <Slide delay={500} duration={500} triggerOnce direction="left">
-                <div className="bg-white grid place-items-center pt-5 relative space-y-4">
+                <div className="bg-[#3C6CA8] py-6 grid place-items-center pt-5 relative space-y-4">
                     <div className="flex justify-center text-lg lg:text-4xl ">
-                        <h1 className="border-b-2 border-yellow-500/80 text-lg italic font-Monterast text-black md:text-4xl capitalize font-bold">Gallery</h1>
+                        <h1 className="border-b-2 border-yellow-500/80 text-2xl italic font-extrabold text-[#EAB2BB] md:text-6xl capitalize ">Gallery</h1>
                     </div>
                     <div className="grid max-w-screen-xl lg:grid-cols-3 gap-5 md:grid-2 justify-items-center p-4 cursor-pointer">
                         {fnames.slice(0,6).map((fname , index) =>(
                             <div key={index} className="shadow-lg overflow-hidden max-w-sm">
-                                <img className="w-full opacity-80 hover:opacity-100 ease-in-out transition-all duration-1000 hover:scale-125" src={fname} alt={fname}/>
+                                <img className="w-full ease-in-out transition-all duration-1000 hover:scale-125" src={fname} alt={fname}/>
                             </div>
                         ))}
                     </div>
                     <div className="flex justify-center pb-4">
-                        <button className="shadow-md  hover:bg-black ease-in-out transition  duration-100 hover:scale-105 text-sm md:text-2xl group cursor-pointer px-4 md:px-16 py-2 border-black border-2 uppercase font-serif tracking-wide">
-                            <a href="/Gallery" className="group-hover:text-white font-Poppins">More Photos </a>
+                        <button className="shadow-md  hover:bg-[#EAB2BB] text-white ease-in-out transition  duration-100 hover:scale-105  md:text-2xl group cursor-pointer px-4 md:px-16 py-2 border-[#EAB2BB] border-2 uppercase font-serif tracking-wide">
+                            <a href="/Gallery" className="group-hover:text-white text-lg font-Poppins">More Photos </a>
                         </button>
                     </div>
                 </div>

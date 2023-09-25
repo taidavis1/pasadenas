@@ -22,7 +22,7 @@ const ServicesData = [
             },
             {
                 'name': 'Manicure-Gel (20 mins)',
-                'price': '$37',
+                'price': '$40',
                 "imgUrl": require('../../img/services/manicure/4.jpg')
             },
             {
@@ -39,37 +39,37 @@ const ServicesData = [
         'service': [
             {
                 'name': 'Pedicure Basic (30 Mins)',
-                'price': '$36',
+                'price': '$37',
                 "imgUrl": require('../../img/services/pedicure/1.jpg')
             },
             {
                 'name': 'Pedicure-College (45 Mins)',
-                'price': '$60',
+                'price': '$55',
                 "imgUrl": require('../../img/services/pedicure/2.jpg')
             },
             {
                 'name': 'Pedicure-Honey (55 Mins)',
-                'price': '$75',
+                'price': '$70',
                 "imgUrl": require('../../img/services/pedicure/3.jpg')
             },
             {
                 'name': 'Pedicure-VIP (70 Mins)',
-                'price': '$100',
+                'price': '$90',
                 "imgUrl": require('../../img/services/pedicure/4.jpg')
             },
             {
-                'name': 'Pedicure-Spa Relax  (35 Mins)',
-                'price': '$45',
+                'name': 'Pedicure Deluxe  (35 Mins)',
+                'price': '$50',
                 "imgUrl": require('../../img/services/pedicure/5.jpg')
             },
             {
                 'name': 'Pedicure-Hot Stone (50 Mins)',
-                'price': '$65',
+                'price': '$60',
                 "imgUrl": require('../../img/services/pedicure/6.jpg')
             },
             {
                 'name': 'Pedicure-LuXury Spa (55 Mins)',
-                'price': '$85',
+                'price': '$80',
                 "imgUrl": require('../../img/services/pedicure/7.jpg')
             },
         ],
@@ -427,7 +427,7 @@ const ServicesData = [
             },
             {
                 'name': 'Bikini',
-                'price': '$40'
+                'price': '$45+'
             },
         ],
         "imgPath": require('../../img/services/wax.jpg')

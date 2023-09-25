@@ -12,8 +12,8 @@ function Service(){
         }));
     };
     return (
-        <section className="space-y-2 pb-5 overflow-hidden lg:space-y-12 bg-black">
-            <div className="spage pt-56 md:pb-40 relative">
+    <section className="space-y-2 pb-5 overflow-hidden lg:space-y-12 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500">
+        <div className="spage pt-56 md:pb-40 relative">
                 <div className="test border-b-2 tracking-wide border-b-yellow-400 cursor-pointer text-white md:text-4xl italic  font-Roboto font-bold">
                     <h2>Our Services</h2>
                 </div>
@@ -24,9 +24,9 @@ function Service(){
                 {ServicesData.map((s) => (
                     <div className="grid grid-cols-1 overflow-auto">
                         <div className="space-y-2">
-                            <button className="w-full py-3 shadow-lg font-semibold tracking-wide uppercase text-center bg-gradient-to-r from-orange-600  to-pink-500" key={s.id} onClick={() => handleBtn(s.id)}>
+                            <button className="w-full py-3 shadow-lg font-semibold tracking-wide uppercase text-center bg-gradient-to-r from-green-200 to-blue-500" key={s.id} onClick={() => handleBtn(s.id)}>
                                 <div className="grid grid-cols-3">
-                                    <div className="col-span-2 text-white tracking-wider">{s.servicename}</div>
+                                    <div className="col-span-2 italic text-black tracking-wider">{s.servicename}</div>
                                         <div>
                                             {!IsClick[s.id]?
                                                 <FontAwesomeIcon className="text-white" icon={faPlus} />: <FontAwesomeIcon className="text-white" icon={faXmark} />
@@ -90,7 +90,7 @@ function Service(){
                                             return "space-y-8 md:grid-cols-2 grid lg:grid-cols-6 gap-x-6 gap-y-3 lg:space-y-0"
                                     case 'Extra':
                                         return "space-y-8 md:grid-cols-2 grid lg:grid-cols-5 gap-x-4 gap-y-3 lg:space-y-0"
-                                    case 'Waxing':
+                                    default:
                                         return "space-y-8 md:grid-cols-2 grid lg:grid-cols-6 gap-x-4 gap-y-3 lg:space-y-0"   
                                 }
                             })()}>
@@ -125,8 +125,8 @@ function Service(){
                                     </div>
                                 ))}
                             </div>
-                            <hr className="mt-4"></hr>
                         </div>
+                        <hr className="mt-5"></hr>
                     </Slide>
                 </div>
             ))}

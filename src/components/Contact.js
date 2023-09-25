@@ -65,7 +65,7 @@ function Contact(){
                                         </li>
                                         <li>
                                             <span className=" transition text-black t-underline t-underline-black border-b-yellow-500">
-                                                Sat: 9:30 am - 8:00 pm
+                                                Sat: 9:30 am - 7:00 pm
                                             </span>
                                         </li>
                                         <li>

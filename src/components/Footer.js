@@ -17,17 +17,17 @@ export default function Footer(){
                 
                         <ul className="mt-8 flex justify-center gap-6 md:gap-8">
                             <li className="">
-                                <a href="https://www.facebook.com/profile.php?id=61550651454544" target="_blank" className="text-teal-700 transition hover:text-teal-700/75">
+                                <a href="https://www.facebook.com/profile.php?id=100088194774286" target="_blank" className="text-teal-700 transition hover:text-teal-700/75">
                                     <img src="https://img.icons8.com/fluent/30/000000/facebook-new.png"/>
                                 </a>
                             </li>
                             <li>
-                                <a href="mailto:nguyenthuyan1706@gmail.com" target="_blank" className="text-teal-700 transition hover:text-teal-700/75">
+                                <a href="mailto:dv_nailsspa@yahoo.com" target="_blank" className="text-teal-700 transition hover:text-teal-700/75">
                                     <img src="https://img.icons8.com/fluent/30/000000/gmail-new.png"/>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/luxurynsws/" target="_blank" className="text-teal-700 transition hover:text-teal-700/75">
+                                <a href="https://www.instagram.com/nailstech.md/" target="_blank" className="text-teal-700 transition hover:text-teal-700/75">
                                     <img src="https://img.icons8.com/fluent/30/000000/instagram-new.png"/>
                                 </a>
                             </li>
@@ -119,7 +119,7 @@ export default function Footer(){
                                 </li>
                                 <li>
                                     <a className=" transition text-black t-underline t-underline-black border-b-yellow-500">
-                                        Sat: 9:30 am - 8:00 pm
+                                        Sat: 9:30 am - 7:00 pm
                                     </a>
                                 </li>
                                 <li>
