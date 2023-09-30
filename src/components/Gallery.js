@@ -12,9 +12,9 @@ function Gallery(){
     }
     const fnames = importImg(require.context('../img/img-nail/img-new/' , false , /\.(png|jpg|jpeg)$/));
     return(
-        <section className = "space-y-6 pb-5 md:pb-12">
+        <section className = "space-y-6 pb-5 md:pb-12 ">
             <div className="gpage pt-56 md:pt-64 md:pb-40 relative">
-                <div className="test1 border-b-2 tracking-wide border-b-yellow-400 cursor-pointer text-white md:text-4xl italic  font-Roboto font-bold">
+                <div className="test1 border-b-2 tracking-wider border-b-yellow-400 cursor-pointer text-white md:text-4xl italic font-Lora ">
                     <h2 className="">Gallery</h2>
                 </div>
             </div>

@@ -7,7 +7,7 @@ export default function Footer(){
                 <div className="grid lg:space-x-12 grid-cols-1 gap-12 lg:grid-cols-3">
                     <div className="grid justify-items-center">
                         <div>
-                            <h2 className="flex md:hidden text-2xl font-Monterast italic tracking-wider font-bold text-gray-900">Nails Tech</h2>
+                            <h2 className="flex md:hidden text-2xl font-Lora italic tracking-wider font-bold text-gray-900">Nails Tech</h2>
                             <img alt ="#" className="md:w-28 hidden md:flex" src={Logo} />
                         </div> 
                         <p className="mt-6 max-w-md tracking-wide leading-relaxed text-gray-500 sm:max-w-xs sm:text-left">
@@ -94,32 +94,32 @@ export default function Footer(){
                             <ul className="mt-8 space-y-4 text-sm">
                                 <li>
                                     <a className=" transition text-black t-underline t-underline-black border-b-yellow-500">
-                                        Mon: 10:00 am - 8:00 pm
+                                        Mon: 9:00 am - 6:00 pm
                                     </a>
                                 </li>
                                 <li>
                                     <a className=" transition text-black t-underline t-underline-black border-b-yellow-500">
-                                        Tues: 10:00 am - 8:00 pm
+                                        Tues: 9:00 am - 6:00 pm
                                     </a>
                                 </li>
                                 <li>
                                     <a className=" transition text-black t-underline t-underline-black border-b-yellow-500">
-                                        Wed: 10:00 am - 8:00 pm
+                                        Wed: 9:00 am - 6:00 pm
                                     </a>
                                 </li>
                                 <li>
                                     <a className=" transition text-black t-underline t-underline-black border-b-yellow-500">
-                                        Thrus: 10:00 am - 8:00 pm
+                                        Thrus: 9:00 am - 6:00 pm
                                     </a>
                                 </li>
                                 <li>
                                     <a className=" transition text-black t-underline t-underline-black border-b-yellow-500">
-                                        Fri: 10:00 am - 8:00 pm
+                                        Fri: 9:00 am - 6:00 pm
                                     </a>
                                 </li>
                                 <li>
                                     <a className=" transition text-black t-underline t-underline-black border-b-yellow-500">
-                                        Sat: 9:30 am - 7:00 pm
+                                        Sat: 9:00 am - 6:00 pm
                                     </a>
                                 </li>
                                 <li>

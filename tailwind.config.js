@@ -10,6 +10,9 @@ module.exports = {
       extend: {
         fontFamily: {
           'new-font': ['Open Sans', 'sans-serif'],
+          'newFont': ['Catamaran', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
+          'Catamaran': ['Catamaran', 'sans-serif'],
+          'Lora': ['Lora', 'serif'],
           'new-2-font': ['Satisfy' , 'cursive'],
           'lato': ['Lato', 'sans-serif'],
           'Roboto': ['Roboto Serif' , 'serif'],
@@ -25,7 +28,14 @@ module.exports = {
         colors:{
           'ser-color': '#ffe4b0',
           'gold': '#ffd700',
+          'blue-test': '#373b4d',
         },
+        backgroundImage:{
+          'pageb': "url('/src/img/img-sub/bg2.jpg')",
+          'pagel': "url('/src/img/img-sub/bg1.jpg')",
+          'paget': "url('/src/img/img-sub/bg.jpg')",
+          'pages': "url('/src/img/img-sub/bg3.jpg')",
+        }
       },
     },
 }

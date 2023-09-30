@@ -4,7 +4,7 @@ function Contact(){
     return(
         <section className="lg:space-y-12 bg-white">
             <div className="cpage pt-60 md:pb-40 relative">
-                <div className="test1 border-b-2 tracking-wide border-b-yellow-400 cursor-pointer text-white md:text-4xl italic  font-Roboto font-bold">
+                <div className="test1 border-b-2 tracking-wide border-b-yellow-400 cursor-pointer text-white md:text-4xl italic font-Lora font-bold">
                     <h2>Contact Us</h2>
                 </div>
             </div>
@@ -14,7 +14,7 @@ function Contact(){
                         <CarouselHome />
                     </div>
                     <div className="p-4 lg:mt-20 space-y-4 lg:space-y-8 lg:text-justify lg:grid justify-center text-center">
-                        <div className="font-serif">
+                        <div className="">
                             <div className="grid grid-cols-1 p-4 space-y-5">
                                 <div>
                                     <span className="text-3xl tracking-wider">See us in person</span>
@@ -40,32 +40,32 @@ function Contact(){
                                     <ul className="space-y-4 text-sm mt-4">
                                         <li>
                                             <span className=" transition text-black t-underline t-underline-black border-b-yellow-500">
-                                                Mon: 10:00 am - 8:00 pm
+                                                Mon: 9:00 am - 6:00 pm
                                             </span>
                                         </li>
                                         <li>
                                             <span className=" transition text-black t-underline t-underline-black border-b-yellow-500">
-                                                Tues: 10:00 am - 8:00 pm
+                                                Tues: 9:00 am - 6:00 pm
                                             </span>
                                         </li>
                                         <li>
                                             <span className=" transition text-black t-underline t-underline-black border-b-yellow-500">
-                                                Wed: 10:00 am - 8:00 pm
+                                                Wed: 9:00 am - 6:00 pm
                                             </span>
                                         </li>
                                         <li>
                                             <span className=" transition text-black t-underline t-underline-black border-b-yellow-500">
-                                                Thrus: 10:00 am - 8:00 pm
+                                                Thrus: 9:00 am - 6:00 pm
                                             </span>
                                         </li>
                                         <li>
                                             <span className=" transition text-black t-underline t-underline-black border-b-yellow-500">
-                                                Fri: 10:00 am - 8:00 pm
+                                                Fri:  9:00 am - 6:00 pm
                                             </span>
                                         </li>
                                         <li>
                                             <span className=" transition text-black t-underline t-underline-black border-b-yellow-500">
-                                                Sat: 9:30 am - 7:00 pm
+                                                Sat: 9:00 am - 6:00 pm
                                             </span>
                                         </li>
                                         <li>

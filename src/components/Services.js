@@ -12,9 +12,9 @@ function Service(){
         }));
     };
     return (
-    <section className="space-y-2 pb-5 overflow-hidden lg:space-y-12 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500">
+    <section className="space-y-2 bg-slate-200 overflow-hidden lg:space-y-12">
         <div className="spage pt-56 md:pb-40 relative">
-                <div className="test border-b-2 tracking-wide border-b-yellow-400 cursor-pointer text-white md:text-4xl italic  font-Roboto font-bold">
+                <div className="test border-b-2 tracking-wide border-b-yellow-400 cursor-pointer text-white md:text-4xl italic font-Lora font-bold">
                     <h2>Our Services</h2>
                 </div>
             </div>
@@ -24,12 +24,12 @@ function Service(){
                 {ServicesData.map((s) => (
                     <div className="grid grid-cols-1 overflow-auto">
                         <div className="space-y-2">
-                            <button className="w-full py-3 shadow-lg font-semibold tracking-wide uppercase text-center bg-gradient-to-r from-green-200 to-blue-500" key={s.id} onClick={() => handleBtn(s.id)}>
+                            <button className="w-full py-3 shadow-lg  bg-[#3C6CA8] text-white rounded-full font-semibold tracking-wide uppercase text-center" key={s.id} onClick={() => handleBtn(s.id)}>
                                 <div className="grid grid-cols-3">
-                                    <div className="col-span-2 italic text-black tracking-wider">{s.servicename}</div>
+                                    <div className="col-span-2 italic tracking-wider">{s.servicename}</div>
                                         <div>
                                             {!IsClick[s.id]?
-                                                <FontAwesomeIcon className="text-white" icon={faPlus} />: <FontAwesomeIcon className="text-white" icon={faXmark} />
+                                                <FontAwesomeIcon className="" icon={faPlus} />: <FontAwesomeIcon className="text-white" icon={faXmark} />
                                             }
                                         </div>
                                 </div>
@@ -42,12 +42,12 @@ function Service(){
                                                 <img src={s.imgPath} alt = {s.servicename} />
                                             </div>
                                             {s.service.map((se , index) => (
-                                                <ul className="text-white ml-4 p-2 grid grid-cols-3 list-inside gap-4">
+                                                <ul className="text-black ml-4 p-2 grid grid-cols-3 list-inside gap-4">
                                                     <div className=" col-span-2">
                                                         <li className="text-xl">{index + 1}. {se.name}</li>
                                                     </div>
                                                     <div>
-                                                        <li className=" text-ser-color tracking-wider font-bold">{se.price}</li>
+                                                        <li className=" text-orange-400 tracking-wider font-bold">{se.price}</li>
                                                     </div>
                                                 </ul>  
                                             ))}
@@ -66,11 +66,11 @@ function Service(){
                 <div className="md:space-y-12 p-3 hidden md:block">
                     <Slide direction="left" delay={200}>
                         <div key={ser.index} className="flex justify-center">
-                            <div className="bg-gradient-to-r from-orange-600  to-pink-500  px-12 py-3">
+                            <div className="bg-[#3C6CA8] rounded-full  px-12 py-3">
                                 <h1 className="tracking-wide capitalize cursor-pointer italic text-white md:text-4xl font-bold">{ser.servicename}</h1>
                             </div>
                         </div>
-                        <div className="p-4 mx-auto max-w-screen-xl cursor-pointer">
+                        <div className="p-4 !text-black mx-auto max-w-screen-xl cursor-pointer">
                             <div className={(() => {
                                 switch (ser.servicename){
                                     case 'Manicure':
@@ -116,8 +116,8 @@ function Service(){
                                                 }
                                             })()}
                                         </div>
-                                        <div className="text-center px-6 py-2 space-y-2 mb-4 text-white">
-                                            <h1 className="md:text-lg capitalize font-Gruppo border-b-2 py-1 border-yellow-500/80">{s.name}</h1>
+                                        <div className="text-center px-6 py-2 space-y-2 mb-4">
+                                            <h1 className="md:text-lg capitalize border-b-2 py-1 border-yellow-500/80">{s.name}</h1>
                                             <div className="text-xl space-y-2">
                                                 {s.price}
                                             </div>
@@ -126,7 +126,6 @@ function Service(){
                                 ))}
                             </div>
                         </div>
-                        <hr className="mt-5"></hr>
                     </Slide>
                 </div>
             ))}

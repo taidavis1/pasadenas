@@ -72,6 +72,11 @@ const ServicesData = [
                 'price': '$80',
                 "imgUrl": require('../../img/services/pedicure/7.jpg')
             },
+            {
+                'name': 'Relax Spa(35 Mins)',
+                'price': '$45',
+                "imgUrl": require('../../img/services/pedicure/5.jpg')
+            },
         ],
         "imgPath": require('../../img/services/pedicure/1.jpg')
     },
@@ -469,25 +474,25 @@ const ServicesData = [
         ],
         "imgPath": require('../../img/services/eyelash/1.jpg')
     },
+    // {
+    //     id : 13,
+    //     'servicename': 'Spa Packages',
+    //     'service': [
+    //         {
+    //             'name': 'Classic Mani & Pedi (40 Mins)',
+    //             'price':'$55',
+    //             "imgUrl": require('../../img/services/SpaPack/2.jpeg')
+    //         },
+    //         {
+    //             'name': 'Hamper For A Day (70 Mins - Gel Mani, Delux Pedi And Herbal Neck Wrap Treatment)',
+    //             'price':'$100',
+    //             "imgUrl": require('../../img/services/SpaPack/1.jpg')
+    //         },
+    //     ],
+    //     "imgPath": require('../../img/services/SpaPack/1.jpg')
+    // },
     {
         id : 13,
-        'servicename': 'Spa Packages',
-        'service': [
-            {
-                'name': 'Classic Mani & Pedi (40 Mins)',
-                'price':'$55',
-                "imgUrl": require('../../img/services/SpaPack/2.jpeg')
-            },
-            {
-                'name': 'Hamper For A Day (70 Mins - Gel Mani, Delux Pedi And Herbal Neck Wrap Treatment)',
-                'price':'$100',
-                "imgUrl": require('../../img/services/SpaPack/1.jpg')
-            },
-        ],
-        "imgPath": require('../../img/services/SpaPack/1.jpg')
-    },
-    {
-        id : 14,
         'servicename': 'Drinks Menu',
         'service': [
             {
