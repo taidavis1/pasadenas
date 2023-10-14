@@ -64,6 +64,9 @@ function Navbar(){
                     <a className="cursor-pointer flex" target="_blank"  rel="noreferrer" href = "https://www.google.com/maps/place/NAILS+TECH/@39.125234,-76.5347105,15z/data=!4m6!3m5!1s0x89b7feb081c4ffd5:0xc692714eadeeba94!8m2!3d39.125234!4d-76.5347105!16s%2Fg%2F1tlqqwsn?entry=ttu">
                         <FontAwesomeIcon className="hover:text-green-300" style={Icon_Style} icon={faGoogle}></FontAwesomeIcon>
                     </a>
+                    <a className="cursor-pointer flex" target="_blank" rel="noreferrer" href="mailto:dv_nailsspa@yahoo.com">
+                        <img src="https://img.icons8.com/fluency/30/gmail-new.png" />
+                    </a>
                     <button onClick={(e) => {
                             e.preventDefault();
                             window.open('https://www.lldtek.com/salon/appt/NTU1NDB8bmFpbHN0ZWNoODh8TURfMDg1Mzh8ZDQ3YmQ2OTJjMzVmYWIzZDgzOTllMjBjNzUyMjhkYmI=' , '_blank');
@@ -88,13 +91,16 @@ function Navbar(){
                     </div>
                     <div className="flex space-x-10 text-2xl justify-center">
                         <a className="cursor-pointer flex" target="_blank" rel="noreferrer" href = "https://www.instagram.com/nailstech.md/">
-                            <FontAwesomeIcon className="hover:text-rose-300 transition ease-in-out delay-150 duration-200"  icon={faInstagram}></FontAwesomeIcon>
+                            <FontAwesomeIcon className="text-rose-300 transition ease-in-out delay-150 duration-200"  icon={faInstagram}></FontAwesomeIcon>
                         </a>
                         <a className="cursor-pointer flex" target="_blank" rel="noreferrer" href = "https://www.facebook.com/profile.php?id=100088194774286">
-                            <FontAwesomeIcon className="hover:text-sky-300 transition ease-in-out delay-150 duration-200"  icon={faFacebookF}></FontAwesomeIcon>
+                            <FontAwesomeIcon className="text-sky-300 transition ease-in-out delay-150 duration-200"  icon={faFacebookF}></FontAwesomeIcon>
                         </a>
                         <a className="cursor-pointer flex" target="_blank" rel="noreferrer" href = "https://www.google.com/maps/place/NAILS+TECH/@39.125234,-76.5347105,15z/data=!4m6!3m5!1s0x89b7feb081c4ffd5:0xc692714eadeeba94!8m2!3d39.125234!4d-76.5347105!16s%2Fg%2F1tlqqwsn?entry=ttu">
-                            <FontAwesomeIcon className="hover:text-green-300"  icon={faEnvelope}></FontAwesomeIcon>
+                            <FontAwesomeIcon className="text-green-300"  icon={faGoogle}></FontAwesomeIcon>
+                        </a>
+                        <a className="cursor-pointer flex" target="_blank" rel="noreferrer" href="mailto:dv_nailsspa@yahoo.com">
+                            <img src="https://img.icons8.com/fluency/25/gmail-new.png" />
                         </a>
                     </div>
                 </nav>

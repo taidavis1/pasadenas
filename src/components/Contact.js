@@ -32,6 +32,11 @@ function Contact(){
                                                 Phone#: (410) 437-6300
                                             </a>
                                         </li>
+                                        <li>
+                                            <a className="transition text-black t-underline t-underline-black border-b-yellow-500" href="mailto:dv_nailsspa@yahoo.com">
+                                                Email: dv_nailsspa@yahoo.com
+                                            </a>
+                                        </li>
                                    </ul>
                                 </div>
                                 <hr></hr>
@@ -74,6 +79,12 @@ function Contact(){
                                             </span>
                                         </li>
                                     </ul>
+                                    <button onClick={(e) => {
+                                        e.preventDefault();
+                                        window.open('https://www.lldtek.com/salon/appt/NTU1NDB8bmFpbHN0ZWNoODh8TURfMDg1Mzh8ZDQ3YmQ2OTJjMzVmYWIzZDgzOTllMjBjNzUyMjhkYmI=' , '_blank');
+                                        }} className="hover:bg-black group mt-4  transition ease-out duration-200 cursor-pointer px-4 py-3 border-black border-2 capitalize font-serif tracking-wide">
+                                            <a className = "group-hover:text-white">Book Now</a>
+                                    </button>
                                 </div>
                             </div>
                             

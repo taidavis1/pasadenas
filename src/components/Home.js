@@ -5,8 +5,7 @@ import pedicure from "../img/img-sub/pedicure.jpg";
 import polish from "../img/img-sub/polish-change.jpg";
 import waxing from "../img/img-sub/wax.jpg";
 import eyelash from "../img/img-sub/eye-lash.jpg"
-import user_data from "./Data/ReviewData";
-import Ann from "../img/img-sub/girl.jpg";
+import ReviewCarousel from "./ReviewCarousel";
 import CarouselHome from "./Carousel";
 function importImg(r){
     return r.keys().map(r);
@@ -148,78 +147,12 @@ function Home(){
                 </div>
             </Fade>
             <Fade triggerOnce delay={500} direction="left">
-                <div className="p-8  bg-[#fafafa] lg:px-28 relative space-y-7">
+                <div className="p-8  bg-[#fafafa] lg:px-28 relative space-y-7 lg:space-y-12">
                     <div className="flex justify-center text-lg lg:text-4xl">
                         <h1 className = "border-b-2 font-Lora  border-white/80 text-2xl italic text-orange-300 md:text-4xl capitalize font-bold">Our Customer Reviews</h1>
                     </div>
-                    <div class="grid border-none gap-8 text-center md:grid-cols-2 lg:grid-cols-4">
-                        {user_data.map((people ,) => (
-                            <div key={people.id}>
-                                <div class="cursor-pointer ease-in-out transition-all duration-1000 lg:hover:opacity-70 block rounded-lg border-none bg-white shadow-lg dark:bg-neutral-700 dark:shadow-black/30">
-                                    <div class="h-16 overflow-hidden"></div>
-                                    <div class="mx-auto -mt-12 w-24 overflow-hidden rounded-full bg-white dark:border-neutral-800 dark:bg-neutral-800">
-                                        <img src={Ann} />
-                                    </div>
-                                    <div class="p-6 space-y-4">
-                                        <h4 class="mb-4 text-2xl font-semibold font-Lora">{people.name}</h4>
-                                        <hr />
-                                        <p class="mt-4 text-blue-test">
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                fill="currentColor"
-                                                class="inline-block h-7 w-7 pr-2"
-                                                viewBox="0 0 24 24">
-                                                <path
-                                                    d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" />
-                                            </svg>
-                                            {people.review}
-                                        </p>
-                                        <div className="flex justify-center gap-1">
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 24 24"
-                                                fill="pink"
-                                                className="mr-1 h-5 w-5 text-danger">
-                                                <path
-                                                    d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
-                                            </svg>
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 24 24"
-                                                fill="pink"
-                                                className="mr-1 h-5 w-5 text-danger">
-                                                <path
-                                                    d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
-                                            </svg>
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 24 24"
-                                                fill="pink"
-                                                className="mr-1 h-5 w-5 text-danger">
-                                                <path
-                                                    d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
-                                            </svg>
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 24 24"
-                                                fill="pink"
-                                                className="mr-1 h-5 w-5 text-danger">
-                                                <path
-                                                    d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
-                                            </svg>
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 24 24"
-                                                fill="pink"
-                                                className="mr-1 h-5 w-5 text-danger">
-                                                <path
-                                                    d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}                 
+                    <div>
+                        <ReviewCarousel />
                     </div>
                 </div>
             </Fade>

@@ -1,5 +1,7 @@
 import {React} from "react"
 import Logo from "../img/img-sub/logo.png";
+import {faGoogle} from "@fortawesome/free-brands-svg-icons";
+
 export default function Footer(){
     return(
         <footer className="bg-white cursor-pointer">
@@ -31,6 +33,11 @@ export default function Footer(){
                                     <img src="https://img.icons8.com/fluent/30/000000/instagram-new.png"/>
                                 </a>
                             </li>
+                            <li>
+                                <a href="https://www.google.com/maps/place/NAILS+TECH/@39.125234,-76.5347105,15z/data=!4m6!3m5!1s0x89b7feb081c4ffd5:0xc692714eadeeba94!8m2!3d39.125234!4d-76.5347105!16s%2Fg%2F1tlqqwsn?entry=ttu" target="_blank" className="text-teal-700 transition hover:text-teal-700/75">
+                                    <img src="https://img.icons8.com/fluency/30/google-logo.png"/>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                     <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4 lg:col-span-2">
@@ -53,7 +60,7 @@ export default function Footer(){
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="/Booking" className="transition text-black t-underline t-underline-black border-b-yellow-500">
+                                    <a href="https://www.lldtek.com/salon/appt/NTU1NDB8bmFpbHN0ZWNoODh8TURfMDg1Mzh8ZDQ3YmQ2OTJjMzVmYWIzZDgzOTllMjBjNzUyMjhkYmI=" target="_blank" className="transition text-black t-underline t-underline-black border-b-yellow-500">
                                         Booking
                                     </a>
                                 </li>
@@ -63,27 +70,27 @@ export default function Footer(){
                             <p className="text-lg font-medium text-gray-900">Services</p> 
                             <ul className="mt-8 space-y-4 text-sm">
                                 <li>
-                                    <a className=" transition text-black t-underline t-underline-black border-b-yellow-500">
+                                    <a target="_blank" href="/Services" className=" transition text-black t-underline t-underline-black border-b-yellow-500">
                                         Manicure
                                     </a>
                                 </li>
                                 <li>
-                                    <a className=" transition text-black t-underline t-underline-black border-b-yellow-500">
+                                    <a target="_blank" href="/Services" className=" transition text-black t-underline t-underline-black border-b-yellow-500">
                                         Pedicure
                                     </a>
                                 </li>
                                 <li>
-                                    <a className=" transition text-black t-underline t-underline-black border-b-yellow-500">
+                                    <a target="_blank" href="/Services" className=" transition text-black t-underline t-underline-black border-b-yellow-500">
                                         Waxing
                                     </a>
                                 </li>
                                 <li>
-                                    <a className=" transition text-black t-underline t-underline-black border-b-yellow-500">
+                                    <a target="_blank" href="/Services" className=" transition text-black t-underline t-underline-black border-b-yellow-500">
                                         Polish Change
                                     </a>
                                 </li>
                                 <li>
-                                    <a className=" transition text-black t-underline t-underline-black border-b-yellow-500">
+                                    <a target="_blank" href="/Services" className=" transition text-black t-underline t-underline-black border-b-yellow-500">
                                         Eyelash Extension
                                     </a>
                                 </li>

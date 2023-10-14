@@ -25,7 +25,7 @@ function Service(){
                     <div className="grid grid-cols-1 overflow-auto">
                         <div className="space-y-2">
                             <button className="w-full py-3 shadow-lg  bg-[#3C6CA8] text-white rounded-full font-semibold tracking-wide uppercase text-center" key={s.id} onClick={() => handleBtn(s.id)}>
-                                <div className="grid grid-cols-3">
+                                <div className="grid grqid-cols-3">
                                     <div className="col-span-2 italic tracking-wider">{s.servicename}</div>
                                         <div>
                                             {!IsClick[s.id]?
@@ -52,7 +52,6 @@ function Service(){
                                                 </ul>  
                                             ))}
                                         </div>
-
                                     </Fade>
                                 </div>
                             )}
