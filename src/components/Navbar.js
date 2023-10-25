@@ -18,17 +18,17 @@ function Navbar(){
     const Icon_Style = {fontSize: '22',};
     return (
         <div className="">
-            <nav className= {Scroll?"bg-white flex justify-between p-4 lg:justify-around lg:py-4 shadow-md w-full fixed top-0 left-0 right-0 z-10 ":"flex text-white justify-between p-4 lg:justify-around lg:py-4 bg-none w-full fixed top-0 left-0 right-0 z-10"}>
+            <nav className= {Scroll?"bg-black text-white flex justify-between p-4 lg:justify-around lg:py-4 shadow-md w-full fixed top-0 left-0 right-0 z-10 ":"flex text-white justify-between p-4 lg:justify-around lg:py-4 bg-none w-full fixed top-0 left-0 right-0 z-10"}>
                 <div className="flex items-center cursor-pointer group">
-                    <img src={Logo} alt="" className="w-24 md:w-40 group-hover:opacity-70"/>
+                    <img src={Logo} alt="" className="w-32 md:w-40 group-hover:opacity-70"/>
                 </div>
-                <div className = " font-Lora capitalize italic font-bold -ml-12 -mt-2 md:hidden block text-center text-xl">
+                <div className = " font-Lora capitalize italic font-bold mr-14 mt-2 md:hidden block text-center text-xl">
                     <div>
                         <span>
                             Nail Tech
                         </span>
                     </div>
-                    <div className=" -mt-2">
+                    <div className="-mt-2">
                         <span className=" text-sm">
                             Pasadenas
                         </span>
@@ -40,7 +40,7 @@ function Navbar(){
                     <FontAwesomeIcon className="" icon={faXmark} />
                 }
                 </div>
-                <div className= {Scroll? "lg:flex text-md hidden items-center space-x-12 font-newFont text-xl capitalize text-black" : "lg:flex text-md hidden items-center space-x-12 font-newFont text-xl capitalize" }>
+                <div className= {Scroll? "lg:flex text-md hidden items-center space-x-12 font-newFont text-xl capitalize text-white" : "lg:flex text-md hidden items-center space-x-12 font-newFont text-xl capitalize" }>
                     <a className="flex t-underline t-underline-black border-b-yellow-500 " href = "/">
                         Home
                     </a>
@@ -54,7 +54,7 @@ function Navbar(){
                         Contact Us
                     </a>
                 </div>
-                <div className = {Scroll? "hidden lg:flex items-center space-x-12 text-black": "hidden lg:flex items-center space-x-12 text-white"}>
+                <div className = "hidden lg:flex items-center space-x-12 text-white">
                     <a className="cursor-pointer flex" target="_blank" rel="noreferrer" href = "https://www.instagram.com/nailstech.md/">
                         <FontAwesomeIcon className="hover:text-rose-300 transition ease-in-out delay-150 duration-200" style={Icon_Style}  icon={faInstagram}></FontAwesomeIcon>
                     </a>
@@ -70,13 +70,13 @@ function Navbar(){
                     <button onClick={(e) => {
                             e.preventDefault();
                             window.open('https://www.lldtek.com/salon/appt/NTU1NDB8bmFpbHN0ZWNoODh8TURfMDg1Mzh8ZDQ3YmQ2OTJjMzVmYWIzZDgzOTllMjBjNzUyMjhkYmI=' , '_blank');
-                        }} className= {Scroll? "hover:bg-black group cursor-pointer px-4 py-3 border-black border-2":"hover:bg-white group cursor-pointer px-4 py-3 border-white border-2"}>
-                        <a target="_blank" className = {Scroll?"group-hover:text-white tracking-wider":"group-hover:text-black tracking-wider"}>Book Now</a>
+                        }} className="hover:bg-white group cursor-pointer px-4 py-3 border-white border-2">
+                        <a target="_blank" className = " tracking-wider text-white group-hover:text-black">Book Now</a>
                     </button>
                 </div>
             </nav>
             {Click?
-                <nav className="overflow-hidden space-y-12 md:space-y-24 top-16 md:top-24 fixed p-6 w-screen h-screen bg-white transition duration-700 ease-out lg:hidden left-0 right-0 z-20  mx-auto  text-black">
+                <nav className="overflow-hidden space-y-12 md:space-y-24 top-20 md:top-24 fixed p-6 w-screen h-screen bg-white transition duration-700 ease-out lg:hidden left-0 right-0 z-20  mx-auto  text-black">
                     <div className=" space-y-16 md:space-y-24 flex uppercase flex-col text-lg mt-12">
                         <a onClick={() => setClick(!Click)} className="" href="/">Home</a>
                         <a onClick={() => setClick(!Click)} className="" href="/Services">Services</a>

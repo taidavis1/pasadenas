@@ -7,6 +7,7 @@ import waxing from "../img/img-sub/wax.jpg";
 import eyelash from "../img/img-sub/eye-lash.jpg"
 import ReviewCarousel from "./ReviewCarousel";
 import CarouselHome from "./Carousel";
+import QuoteCarousel from "./QuoteCarousel";
 function importImg(r){
     return r.keys().map(r);
 }
@@ -20,19 +21,7 @@ function Home(){
                         <div className="">
                             <h1 className="text-4xl ml-4 text-orange-300 md:text-6xl tracking-widest whitespace-nowrap font-Lora font-extrabold">Nails Tech</h1>
                         </div>
-                        <div className="flex justify-center italic">
-                            <ul className=" text-white space-y-2 font-light">
-                                <li>
-                                    <h2 className="text-lg md:text-xl tracking-wide">YOU CAN'T BUY HAPPINESS</h2>
-                                </li>
-                                <li>
-                                    <h2 className="text-lg md:text-xl tracking-wide italic">BUT YOU CAN BUY NAIL ART AND THAT'S</h2>
-                                </li>
-                                <li>
-                                    <h2 className="text-lg md:text-xl tracking-wide">BASICALLY THE SAME THING!</h2>
-                                </li>
-                            </ul>
-                        </div>
+                        <QuoteCarousel />
                         <button onClick={(e) => {
                             e.preventDefault();
                             window.open('https://www.lldtek.com/salon/appt/NTU1NDB8bmFpbHN0ZWNoODh8TURfMDg1Mzh8ZDQ3YmQ2OTJjMzVmYWIzZDgzOTllMjBjNzUyMjhkYmI=' , '_blank');
