@@ -35,6 +35,7 @@ module.exports = {
           'pagel': "url('/src/img/img-sub/bg1.jpg')",
           'paget': "url('/src/img/img-sub/bg.jpg')",
           'pages': "url('/src/img/img-sub/bg3.jpg')",
+          'bgpop': "url('/src/img/img-sub/test.png')",
         }
       },
     },

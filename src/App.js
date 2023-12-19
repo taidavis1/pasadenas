@@ -7,7 +7,6 @@ import Service from './components/Services';
 import Gallery from './components/Gallery';
 import Contact from './components/Contact';
 import {Route , Routes} from 'react-router-dom';
-
 function App() {
   return (
     <main className='bg-white font-newFont'>
