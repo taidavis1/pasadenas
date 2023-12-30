@@ -1,37 +1,15 @@
 import React, { useContext } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { InfoContext } from "./BookingMain";
-import { Link } from 'react-router-dom';
 import 'react-datetime-picker/dist/DateTimePicker.css';
 import 'react-calendar/dist/Calendar.css';
 import 'react-clock/dist/Clock.css';
-import axios from "axios";
 
 function Booking() {
     const { pageid, name, phone } = useContext(InfoContext);
     const [Phone, setPhone] = phone;
     const [Name, setName] = name;
     const [PageId, SetPageId] = pageid;
-
-    const userContact = (e) => {
-        e.preventDefault();
-        axios.post('api/booking', {
-            name: Name,
-            phone: Phone,
-        })
-            .then(function (res) {
-                setName('');
-                setPhone('');
-                alert(res.data.messages);
-            })
-            .catch(function (error) {
-                console.log(error, 'error');
-
-            });
-    };
-
-
+    
     return (
         <>
             {SetPageId(4)}
@@ -47,7 +25,7 @@ function Booking() {
                                 Name
                             </label>
                             <input value={Name} onChange={(e) => setName(e.target.value)} className="appearance-none focus:outline-none border-sky-300 block w-full text-gray-700 border-2 rounded py-3 px-4 mb-3 leading-tight" type="text" placeholder="Your Name" />
-                            {Name == "" &&
+                            {Name === "" &&
                                 <p className="text-red-500 text-xs italic">Please fill out this field.</p>
                             }
                         </div>
@@ -58,7 +36,7 @@ function Booking() {
                                 Phone
                             </label>
                             <input value={Phone} onChange={(e) => setPhone(e.target.value)} className="appearance-none block w-full  border-sky-400 border-2  rounded py-3 px-4 mb-3 leading-tight focus:outline-none" type="text" placeholder="**********" />
-                            {Phone == "" &&
+                            {Phone === "" &&
                                 <p className="text-red-500 text-xs italic">Please fill out this field.</p>
                             }
                         </div>

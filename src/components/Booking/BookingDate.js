@@ -18,16 +18,16 @@ export default function BookingDate() {
     const [isTime, SetTime] = time;
     const [BGColor, setBGColor] = color;
     const [PageId, SetPageId] = pageid;
+    
     const generatetime = async (day, date) => {
         try {
-            const resp = await axios.get(`${process.env.REACT_APP_API_URL_LOCAL}/generatehours/${day}/${date}`);
+            const resp = await axios.get(`http://64.23.140.139:8080/api/generatehours/${day}/${date}`);
             setHours(resp.data.hours)
         } catch (error) {
             console.log("Error: ", error);
         }
     }
     const handleValueChange = (newValue) => {
-        
         if (newValue.startDate != null) {
             SetisSelect(true)
             setValue(newValue);
@@ -69,9 +69,11 @@ export default function BookingDate() {
                 SetisSelect(false);
                 SetTime("");
             }
-            generatetime(day, DateVal);
+            else{
+                generatetime(day, DateVal);
+            }
         }
-    }, [day, DateVal, isSelect]);
+    }, [DateVal, isSelect]);
 
     return (
         <>

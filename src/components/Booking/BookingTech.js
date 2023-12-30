@@ -44,6 +44,12 @@ export default function BookingTech() {
             name : "Tip",
             checkmark :  require("../../img/checkmark.png"),
             img : require("../../img/nail-tech/7.png")
+        },
+        {
+            index: 8,
+            name : "Random",
+            checkmark :  require("../../img/checkmark.png"),
+            img : require("../../img/nail-tech/8.png")
         }
     ];
 
@@ -58,7 +64,26 @@ export default function BookingTech() {
             [id]: !lastClick[id],
         }));
         if (!IsTechClick[id]) {
-            setTechName(TechnicianName[id-1].name);
+            if (TechnicianName[id-1].name === 'Random'){
+                if (day === 'Mon'){
+                    const fill_arr = TechnicianName.filter(item => !item.name.includes('Peter') && !item.name.includes('Random'));
+                    const randomIndex = Math.floor(Math.random() * fill_arr.length);
+                    setTechName(fill_arr[randomIndex].name);
+                }
+                else if (day === 'Tues'){
+                    const fill_arr = TechnicianName.filter(item => !item.name.includes('Dorey') && !item.name.includes('Random'));
+                    const randomIndex = Math.floor(Math.random() * fill_arr.length);
+                    setTechName(fill_arr[randomIndex].name);
+                }
+                else{
+                    const fill_arr = TechnicianName.filter(item => !item.name.includes('Random'));
+                    const randomIndex = Math.floor(Math.random() * fill_arr.length);
+                    setTechName(fill_arr[randomIndex].name);
+                }
+            }
+            else{
+                setTechName(TechnicianName[id-1].name);
+            }
         }
         else {
             setTechName("");
@@ -104,6 +129,19 @@ export default function BookingTech() {
                                             </div>
                                         </div>
                                     )
+                                )
+                            case 'Random':
+                                return (
+                                    <div onClick={() => handleBtn(tech.index)} key={tech.index} className="shadow-lg cursor-pointer py-3 space-y-3 rounded-lg mb-2 ease-in-out transition-all duration-1000 md:hover:scale-105">
+                                        <div className="overflow-hidden">
+                                            {!IsTechClick[tech.index]? 
+                                                <img src={tech.img} alt="#" className="w-full" /> : <img src={tech.checkmark} alt="#" className="w-full" />
+                                            }
+                                        </div>
+                                        <div className="text-center capitalize text-black font-bold tracking-wider">
+                                            <span style={{ fontFamily: 'Roboto' }}>{tech.name}</span>
+                                        </div>
+                                    </div>
                                 )
                             default:
                                 return (

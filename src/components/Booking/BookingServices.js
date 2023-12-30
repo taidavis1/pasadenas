@@ -62,10 +62,10 @@ export default function BookingServices() {
             <hr className="h-0.5 border-[#9eccfa]"></hr>
             <div className="grid lg:grid-cols-2 grid-cols-2 lg:p-4 gap-6 justify-items-center">
                 {ServicesData.map((ser, id) => (
-                    id !== 12 &&
+                    id !== 12 && id !== 9 &&
                         (
                             <>
-                                <div className="w-full cursor-pointer hover:scale-105 ease-in-out transition-all duration-1000 py-3 shadow-lg font-semibold tracking-wide font-Poppins text-center border-gold border-2" key={id} onClick={() => handleBtn(id)}>
+                                <div className="w-full cursor-pointer hover:scale-105 ease-in-out transition-all duration-1000 py-3 shadow-lg font-semibold tracking-wide font-Catamaran italic lg:font-Poppins text-center border-gold border-2" key={id} onClick={() => handleBtn(id)}>
                                     <div className="flex justify-center px-4 lg:grid lg:grid-cols-3">
                                         <span className="tracking-wider text-sm lg:text-lg">{ser.servicename}</span>
                                         <div className="hidden lg:flex lg:flex-col justify-center">

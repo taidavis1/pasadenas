@@ -29,6 +29,7 @@ function App() {
             <Route path="info" element={<Booking />} />
             <Route path="*" element={<Navigate to="/Booking/" />} />
         </Route>
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       <Footer/>
       <FloatBtn />

@@ -1,5 +1,5 @@
 import React, { createContext, useState } from "react";
-import { Outlet, Link, Navigate} from 'react-router-dom';
+import { Outlet, Link} from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons"
 import axios from "axios";
@@ -26,16 +26,16 @@ export default function BookingMain() {
 
     const sendInfo = (e) => {
         e.preventDefault();
-        if (Name !== '' &&  Phone != '' && ServiceVal.length > 0 && DateVal !== '' && TechName !== '' && isTime !== ''){
-            axios.post(`${process.env.REACT_APP_API_URL_LOCAL}/book`, {
+        if (Name !== '' &&  Phone !== '' && ServiceVal.length > 0 && DateVal !== '' && TechName !== '' && isTime !== ''){
+            axios.post('http://64.23.140.139:8080/api/booking', {
                 name: Name,
                 phone: Phone,
-                service: ServiceVal,
+                services_list: ServiceVal,
                 date: DateVal,
                 time: isTime,
-                technician: TechName,
+                tech: TechName,
             }).then(function (resp) {
-                alert(resp.data.messages);
+                alert(resp.data.msg);
                 window.location.href = "/";
             })
                 .catch(function (error) {
@@ -59,10 +59,10 @@ export default function BookingMain() {
                                     <div className="lg:px-12 lg:col-span-6 space-y-5">
                                         <Outlet />
                                         {PageId === 1 && (
-                                            <div className="flex justify-center font-Lora">
+                                            <div className="flex justify-center font-Lora" style={{ fontFamily: 'Tangerine' }}>
                                                 <Link 
                                                     to = "/Booking/datetime"
-                                                    className="bg-[#FEE91C] md:flex hidden shadow-md ease-in-out transition duration-100 hover:scale-105 text-xl cursor-pointer p-16 md:px-16 py-2 text-[#0a1856] font-bold tracking-wider">Continue
+                                                    className="bg-[#FEE91C] md:flex hidden shadow-md ease-in-out transition duration-100 hover:scale-105 text-3xl cursor-pointer p-16 md:px-16 py-2 text-[#0a1856] font-bold tracking-wider">Continue
                                                 </Link>
                                             </div>
                                         )}
@@ -103,12 +103,11 @@ export default function BookingMain() {
                                         )}
                                         {PageId === 4 && (
                                             <div className="flex justify-center space-x-5 lg:space-x-12 py-4">
-
-                                                <Link to="/Booking/bookingtechnician" className="bg-[#FEE91C] rounded-lg shadow-md ease-in-out transition duration-100 hover:scale-105 text-lg md:text-2xl cursor-pointer px-16 py-2 border-[#FEE91C] border-2 font-serif tracking-wider">
+                                                <Link to="/Booking/bookingtechnician" className="bg-[#FEE91C] rounded-lg shadow-md ease-in-out transition duration-100 hover:scale-105 text-sm md:text-2xl cursor-pointer px-16 py-2 border-[#FEE91C] border-2 font-serif tracking-wider">
                                                     <FontAwesomeIcon className="" icon={faArrowLeft} />
                                                 </Link>
 
-                                                <button onClick={(e) => sendInfo(e)} type="submit"  className="bg-[#FEE91C] rounded-lg shadow-md ease-in-out transition duration-100 hover:scale-105 text-lg md:text-2xl cursor-pointer px-16 py-2 border-[#FEE91C] border-2 font-serif tracking-wider">
+                                                <button onClick={(e) => sendInfo(e)} type="submit"  className="bg-[#FEE91C] rounded-lg shadow-md ease-in-out transition duration-100 hover:scale-105 text-sm md:text-2xl cursor-pointer px-16 py-2 border-[#FEE91C] border-2 font-serif tracking-wider">
                                                     Submit
                                                 </button>
                                             </div>
