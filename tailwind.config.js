@@ -5,6 +5,7 @@ module.exports = {
     content: [
       "./src/**/*.{js,jsx,ts,tsx}",
       "./node_modules/tw-elements/dist/js/**/*.js",
+      "./node_modules/react-tailwindcss-datepicker/dist/index.esm.js",
     ],
     theme: {
       extend: {
@@ -24,6 +25,7 @@ module.exports = {
           'Monterast' :['Montserrat',' sans-serif'],
           'Gruppo': ['Gruppo', 'sans-serif'],
           'PlayFair': ['Playfair Display', 'serif'],
+          'Dancing': ['Dancing Script', 'cursive'],
         },
         colors:{
           'ser-color': '#ffe4b0',
