@@ -7,11 +7,13 @@ import Popup from "./Popup";
 import { Link } from "react-router-dom";
 export default function BookingServices() {
     const { service, click, pageid, clicksub } = useContext(ServiceContext);
+    const [isConfirm , setIsConfirm] = useState(false);
     const [IsClick, setIsClick] = click;
     const [ServiceVal, setServiceVal] = service;
     const [IsSubClick, setIsSubClick] = clicksub;
     const [PageId, SetPageId] = pageid;
     const handleBtn = (id) => {
+        setIsConfirm(false);
         setIsClick((lastClick) => ({
             ...lastClick,
             [id]: !lastClick[id],
@@ -33,9 +35,9 @@ export default function BookingServices() {
         }));
 
         if (!IsSubClick[id]?.[index]) {
+            setIsConfirm(!isConfirm);
             setServiceVal([...ServiceVal, ServicesData[id].service[index].name]);
         }
-        
         else {
             setServiceVal(ServiceVal.filter((service) => service !== ServicesData[id].service[index].name));
         }
@@ -47,25 +49,13 @@ export default function BookingServices() {
             <div className="lg:py-3 text-center">
                 <h1 className="text-2xl lg:text-4xl capitalize italic font-semibold tracking-wider" style={{ fontFamily: 'Tangerine' }}>What Services Do You Want?</h1>
             </div>
-            <div className="flex justify-center" style={{ fontFamily: 'Tangerine' }}>
-                <Link 
-                    onClick={() => {
-                        if (ServiceVal.length > 0){
-                            alert("You Choose " + ServiceVal);
-                        }
-                    }}
-                    to =  "/Booking/datetime"
-                    className="bg-[#FEE91C] md:hidden shadow-md ease-in-out rounded-full transition duration-100 hover:scale-105 text-lg cursor-pointer p-6 md:px-12 py-2 text-[#0a1856] font-bold tracking-wider">
-                    <FontAwesomeIcon className="" icon={faArrowRight} />
-                </Link>
-            </div>
             <hr className="h-0.5 border-[#9eccfa]"></hr>
-            <div className="grid lg:grid-cols-2 grid-cols-2 lg:p-4 gap-6 justify-items-center">
+            <div className="grid lg:grid-cols-2 grid-cols-2 lg:p-4 lg:gap-6 gap-4 justify-items-center">
                 {ServicesData.map((ser, id) => (
                     id !== 12 && id !== 9 &&
                         (
                             <>
-                                <div className="w-full cursor-pointer hover:scale-105 ease-in-out transition-all duration-1000 py-3 shadow-lg font-semibold tracking-wide font-Catamaran italic lg:font-Poppins text-center border-gold border-2" key={id} onClick={() => handleBtn(id)}>
+                                <div className="w-full cursor-pointer hover:scale-105 ease-in-out transition-all duration-1000 py-3 shadow-lg font-semibold tracking-wide  italic font-Poppins text-center border-gold border-2" key={id} onClick={() => handleBtn(id)}>
                                     <div className="flex justify-center px-4 lg:grid lg:grid-cols-3">
                                         <span className="tracking-wider text-sm lg:text-lg">{ser.servicename}</span>
                                         <div className="hidden lg:flex lg:flex-col justify-center">
@@ -76,7 +66,7 @@ export default function BookingServices() {
                                     </div>
                                 </div>
                                 {IsClick[id] && (
-                                    <Popup subclick = {IsSubClick} click = {setIsClick} id = {id} handle_sub = {handleSub} service_list = {ser.service} />
+                                    <Popup service_val = {ServiceVal} confirm = {isConfirm} setConfirm = {setIsConfirm} subclick = {IsSubClick} click = {setIsClick} id = {id} handle_sub = {handleSub} service_list = {ser.service} />
                                 )}
                             </>
                         )

@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Datepicker from "react-tailwindcss-datepicker";
 import { DateContext } from "./BookingMain";
 import axios from "axios";
@@ -99,14 +100,27 @@ export default function BookingDate() {
             {isSelect ?
                 (
                     <div className=" max-w-screen-lg lg:px-4">
-                        <div className="grid lg:px-12 grid-cols-3 lg:grid-cols-12 p-2 gap-6 text-lg">
+                        <div className="grid lg:px-6 grid-cols-3 lg:grid-cols-12 p-2 gap-6 text-lg">
                             {Hours.map((h, index) => (
-                                <div onClick={() => {
-                                    handlebtn(index, h)
-                                    ChangeBG(index);
-                                }} key={index} style={{ backgroundColor: BGColor[index] ? 'black' : 'white', color: BGColor[index] ? 'white' : 'black' }} className="ease-in-out transition duration-100 hover:scale-105 lg:text-lg text-sm lg:col-span-3 group shadow-lg cursor-pointer font-Roboto font-semibold tracking-wide border-2 border-black/50 text-center py-2">
-                                    <span className="">{h}</span>
-                                </div>
+                               <>
+                                    <Link onClick={() => {
+                                        handlebtn(index, h);
+                                        ChangeBG(index);
+                                    }} to="/Booking/bookingtechnician" key={index} style={{ backgroundColor: BGColor[index] ? 'black' : 'white', color: BGColor[index] ? 'white' : 'black' }} 
+                                        className="ease-in-out transition justify-center duration-100 hover:scale-105 lg:text-lg text-sm lg:col-span-3 group shadow-lg 
+                                        cursor-pointer lg:flex hidden font-Roboto font-semibold tracking-wide border-2 border-black/50 text-center py-2">
+                                        <span className="">{h}</span>
+                                    </Link>
+                                    <Link onClick={() => {
+                                        alert("You Choose " + DateVal + ' ' + 'at ' + h);
+                                        handlebtn(index, h);
+                                        ChangeBG(index);
+                                    }} to="/Booking/bookingtechnician" key={index} style={{ backgroundColor: BGColor[index] ? 'black' : 'white', color: BGColor[index] ? 'white' : 'black' }} 
+                                        className="ease-in-out justify-center transition duration-100 hover:scale-105 lg:text-lg text-sm group shadow-lg 
+                                        cursor-pointer lg:hidden flex font-Roboto font-semibold tracking-wide border-2 border-black/50 text-center py-2">
+                                        <span className="">{h}</span>
+                                    </Link>
+                                </>
                             ))}
                         </div>
                     </div>

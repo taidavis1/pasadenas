@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { TechContext } from "./BookingMain";
-
+import { Link } from "react-router-dom";
 export default function BookingTech() {
     const TechnicianName = [
         {
@@ -80,6 +80,9 @@ export default function BookingTech() {
                     const randomIndex = Math.floor(Math.random() * fill_arr.length);
                     setTechName(fill_arr[randomIndex].name);
                 }
+
+
+
             }
             else{
                 setTechName(TechnicianName[id-1].name);
@@ -103,7 +106,7 @@ export default function BookingTech() {
                             case "Peter":
                                 return (
                                     day !== 'Mon' && (
-                                        <div onClick={() => handleBtn(tech.index)} key={tech.index} className="shadow-lg cursor-pointer py-3 space-y-3 rounded-lg mb-2 ease-in-out transition-all duration-1000 md:hover:scale-105">
+                                        <Link onClick={() => {handleBtn(tech.index) ; alert("You Choose " + tech.name)}} to="/Booking/info" key={tech.index} className="shadow-lg cursor-pointer py-3 space-y-3 rounded-lg mb-2 ease-in-out transition-all duration-1000 md:hover:scale-105">                                            
                                             <div className="overflow-hidden">
                                                 {!IsTechClick[tech.index]? 
                                                     <img src={tech.img} alt="#" className="w-full" /> : <img src={tech.checkmark} alt="#" className="w-full" />
@@ -112,13 +115,13 @@ export default function BookingTech() {
                                             <div className="text-center capitalize text-sky-500 font-bold tracking-wider">
                                                 <span style={{ fontFamily: 'Roboto' }}>{tech.name}</span>
                                             </div>
-                                        </div>
+                                        </Link>
                                     )
                                 )
                             case "Dorey":
                                 return (
                                     day !== 'Tues' &&(
-                                        <div onClick={() => handleBtn(tech.index)} key={tech.index} className="shadow-lg cursor-pointer py-3 space-y-3 rounded-lg mb-2 ease-in-out transition-all duration-1000 md:hover:scale-105">
+                                        <Link onClick={() => {handleBtn(tech.index) ; alert("You Choose " + tech.name)}} to="/Booking/info" key={tech.index} className="shadow-lg cursor-pointer py-3 space-y-3 rounded-lg mb-2 ease-in-out transition-all duration-1000 md:hover:scale-105">                                            
                                             <div className="overflow-hidden">
                                                 {!IsTechClick[tech.index]? 
                                                     <img src={tech.img} alt="#" className="w-full" /> : <img src={tech.checkmark} alt="#" className="w-full" />
@@ -127,12 +130,12 @@ export default function BookingTech() {
                                             <div className="text-center capitalize text-pink-500 font-bold tracking-wider">
                                                 <span style={{ fontFamily: 'Roboto' }}>{tech.name}</span>
                                             </div>
-                                        </div>
+                                        </Link>
                                     )
                                 )
                             case 'Random':
                                 return (
-                                    <div onClick={() => handleBtn(tech.index)} key={tech.index} className="shadow-lg cursor-pointer py-3 space-y-3 rounded-lg mb-2 ease-in-out transition-all duration-1000 md:hover:scale-105">
+                                    <Link onClick={() => handleBtn(tech.index)} to="/Booking/info" key={tech.index} className="shadow-lg cursor-pointer py-3 space-y-3 rounded-lg mb-2 ease-in-out transition-all duration-1000 md:hover:scale-105">                                            
                                         <div className="overflow-hidden">
                                             {!IsTechClick[tech.index]? 
                                                 <img src={tech.img} alt="#" className="w-full" /> : <img src={tech.checkmark} alt="#" className="w-full" />
@@ -141,12 +144,12 @@ export default function BookingTech() {
                                         <div className="text-center capitalize text-black font-bold tracking-wider">
                                             <span style={{ fontFamily: 'Roboto' }}>{tech.name}</span>
                                         </div>
-                                    </div>
+                                    </Link>
                                 )
                             default:
                                 return (
                                     day !== "Sun" && (
-                                        <div onClick={() => handleBtn(tech.index)} key={tech.index} className="shadow-lg cursor-pointer py-3 space-y-3 rounded-lg mb-2 ease-in-out transition-all duration-1000 md:hover:scale-105">
+                                        <Link onClick={() => {handleBtn(tech.index) ; alert("You Choose " + tech.name); }} to="/Booking/info" key={tech.index} className="shadow-lg cursor-pointer py-3 space-y-3 rounded-lg mb-2 ease-in-out transition-all duration-1000 md:hover:scale-105">                                            
                                             <div className="overflow-hidden">
                                                 {!IsTechClick[tech.index]? 
                                                     <img src={tech.img} alt="#" className="w-full" />: <img src={tech.checkmark} alt="#" className="w-full" />
@@ -155,7 +158,7 @@ export default function BookingTech() {
                                             <div className="text-center capitalize text-pink-500 font-bold tracking-wider">
                                                 <span style={{ fontFamily: 'Roboto' }}>{tech.name}</span>
                                             </div>
-                                        </div>
+                                        </Link>
                                     )
                                 )
                         }

@@ -58,27 +58,12 @@ export default function BookingMain() {
                                 <div className="grid grid-cols-1 lg:grid-cols-8 gap-4 px-6">
                                     <div className="lg:px-12 lg:col-span-6 space-y-5">
                                         <Outlet />
-                                        {PageId === 1 && (
-                                            <div className="flex justify-center font-Lora" style={{ fontFamily: 'Tangerine' }}>
-                                                <Link 
-                                                    to = "/Booking/datetime"
-                                                    className="bg-[#FEE91C] md:flex hidden shadow-md ease-in-out transition duration-100 hover:scale-105 text-3xl cursor-pointer p-16 md:px-16 py-2 text-[#0a1856] font-bold tracking-wider">Continue
-                                                </Link>
-                                            </div>
-                                        )}
                                         {PageId === 2 && (
                                             <div className="flex justify-center space-x-5 lg:space-x-12 py-4">
                                                 <Link to="/Booking/services" className="bg-[#FEE91C] rounded-lg shadow-md ease-in-out transition duration-100 hover:scale-105 text-sm md:text-2xl cursor-pointer px-16 py-2 border-[#FEE91C] border-2 font-serif tracking-wider">
                                                     <FontAwesomeIcon className="" icon={faArrowLeft} />
                                                 </Link>
-                                                <Link onClick={() => {
-                                                    if (DateVal !== '' && isTime !== ''){
-                                                        alert("You Choose " + DateVal + ' ' + isTime);
-                                                    };
-                                                }} to="/Booking/bookingtechnician" className="bg-[#FEE91C] md:hidden rounded-lg shadow-md ease-in-out transition duration-100 hover:scale-105 text-sm md:text-2xl cursor-pointer px-16 py-2 border-[#FEE91C] border-2 font-serif tracking-wider">
-                                                    <FontAwesomeIcon className="" icon={faArrowRight} />
-                                                </Link>
-                                                <Link to="/Booking/bookingtechnician" className="bg-[#FEE91C] hidden md:flex rounded-lg shadow-md ease-in-out transition duration-100 hover:scale-105 text-sm md:text-2xl cursor-pointer px-16 py-2 border-[#FEE91C] border-2 font-serif tracking-wider">
+                                                <Link to="/Booking/bookingtechnician" className="bg-[#FEE91C] rounded-lg shadow-md ease-in-out transition duration-100 hover:scale-105 text-sm md:text-2xl cursor-pointer px-16 py-2 border-[#FEE91C] border-2 font-serif tracking-wider">
                                                     <FontAwesomeIcon className="" icon={faArrowRight} />
                                                 </Link>
                                             </div>
@@ -88,15 +73,8 @@ export default function BookingMain() {
                                                 <Link to="/Booking/datetime" className="bg-[#FEE91C] rounded-lg shadow-md ease-in-out transition duration-100 hover:scale-105 text-sm md:text-2xl cursor-pointer px-16 py-2 border-[#FEE91C] border-2 font-serif tracking-wider">
                                                     <FontAwesomeIcon className="" icon={faArrowLeft} />
                                                 </Link>
-                                                <Link onClick={() => {
-                                                    if (TechName !== ''){
-                                                        alert("You choose " + TechName);
-                                                    }
-                                                }} to="/Booking/info" className="bg-[#FEE91C] md:hidden rounded-lg shadow-md ease-in-out transition duration-100 hover:scale-105 text-sm md:text-2xl cursor-pointer px-16 py-2 border-[#FEE91C] border-2 font-serif tracking-wider">
-                                                    <FontAwesomeIcon className="" icon={faArrowRight} />
-                                                </Link>
                                                 <Link
-                                                    to="/Booking/info" className="bg-[#FEE91C] hidden md:flex rounded-lg shadow-md ease-in-out transition duration-100 hover:scale-105 text-sm md:text-2xl cursor-pointer px-16 py-2 border-[#FEE91C] border-2 font-serif tracking-wider">
+                                                    to="/Booking/info" className="bg-[#FEE91C] rounded-lg shadow-md ease-in-out transition duration-100 hover:scale-105 text-sm md:text-2xl cursor-pointer px-16 py-2 border-[#FEE91C] border-2 font-serif tracking-wider">
                                                     <FontAwesomeIcon className="" icon={faArrowRight} />
                                                 </Link>
                                             </div>
