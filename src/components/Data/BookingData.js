@@ -5,13 +5,13 @@ const ServicesData = [
         'service': [
             {
                 'name': 'Manicure-Classic (15 mins)',
-                'price': '$22',
+                'price': '$25',
                 "imgUrl": require('../../img/services/manicure/1.jpg')
                 
             },
             {
                 'name': 'Manicure Gel And Spa (30mins)',
-                'price': '$50',
+                'price': '$55',
                 "imgUrl": require('../../img/services/manicure/2.jpg')
                 
             },
@@ -26,8 +26,8 @@ const ServicesData = [
                 "imgUrl": require('../../img/services/manicure/4.jpg')
             },
             {
-                'name': 'Change The Polish-Gel (15 mins)',
-                'price': '$30',
+                'name': 'Manicure Buffer Shiny',
+                'price': '$35',
                 "imgUrl": require('../../img/services/manicure/5.jpg')
             },
         ],
@@ -244,6 +244,11 @@ const ServicesData = [
                 'name' : 'Liquid Gel',
                 'price': '$55',
                 "imgUrl": require('../../img/services/fill/2.jpg')
+            },
+            {
+                'name': 'Fill Builder Gel',
+                'price': '',
+                "imgUrl": ''
             },
         ],
         "imgPath": require('../../img/services/fill/1.jpg')
@@ -474,50 +479,15 @@ const ServicesData = [
         ],
         "imgPath": require('../../img/services/eyelash/1.jpg')
     },
-    // {
-    //     id : 13,
-    //     'servicename': 'Spa Packages',
-    //     'service': [
-    //         {
-    //             'name': 'Classic Mani & Pedi (40 Mins)',
-    //             'price':'$55',
-    //             "imgUrl": require('../../img/services/SpaPack/2.jpeg')
-    //         },
-    //         {
-    //             'name': 'Hamper For A Day (70 Mins - Gel Mani, Delux Pedi And Herbal Neck Wrap Treatment)',
-    //             'price':'$100',
-    //             "imgUrl": require('../../img/services/SpaPack/1.jpg')
-    //         },
-    //     ],
-    //     "imgPath": require('../../img/services/SpaPack/1.jpg')
-    // },
     {
-        id : 13,
-        'servicename': 'Drinks Menu',
+        id: 13,
+        'servicename': 'Builder Gel',
         'service': [
             {
-                'name': 'Soft Drinks',
-                'price':'',
-                "imgUrl": require('../../img/services/drink/3.jpg')
-            },
-            {
-                'name': 'Alcoholic Drinks',
-                'price':'',
-                "imgUrl": require('../../img/services/drink/2.jpg')
-            },
-            {
-                'name': 'Juice',
-                'price':'',
-                "imgUrl": require('../../img/services/drink/1.jpg')
-            },
-            {
-                'name': 'Sparkling',
-                'price':'',
-                "imgUrl": require('../../img/services/drink/4.jpg')
-            },
+                'name' : 'Full Sets'
+            }
         ],
-        "imgPath": require('../../img/services/drink/3.jpg')
-    }
+    },
 ];
 
 export default ServicesData;

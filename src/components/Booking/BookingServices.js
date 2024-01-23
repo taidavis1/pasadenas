@@ -4,7 +4,6 @@ import { ServiceContext } from "./BookingMain";
 import ServicesData from "../Data/BookingData";
 import {faPlus, faXmark , faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Popup from "./Popup";
-import { Link } from "react-router-dom";
 export default function BookingServices() {
     const { service, click, pageid, clicksub } = useContext(ServiceContext);
     const [isConfirm , setIsConfirm] = useState(false);
@@ -52,10 +51,11 @@ export default function BookingServices() {
             <hr className="h-0.5 border-[#9eccfa]"></hr>
             <div className="grid lg:grid-cols-2 grid-cols-2 lg:p-4 lg:gap-6 gap-4 justify-items-center">
                 {ServicesData.map((ser, id) => (
-                    id !== 12 && id !== 9 &&
+                    id !== 2 && id !== 9 && id !== 8 &&
                         (
                             <>
-                                <div className="w-full cursor-pointer hover:scale-105 ease-in-out transition-all duration-1000 py-3 shadow-lg font-semibold tracking-wide  italic font-Poppins text-center border-gold border-2" key={id} onClick={() => handleBtn(id)}>
+                                <div className="w-full cursor-pointer hover:scale-105 ease-in-out transition-all duration-1000 py-3 shadow-lg font-semibold tracking-wide  italic font-Poppins text-center border-gold border-2" 
+                                key={id} onClick={() => handleBtn(id)}>
                                     <div className="flex justify-center px-4 lg:grid lg:grid-cols-3">
                                         <span className="tracking-wider text-sm lg:text-lg">{ser.servicename}</span>
                                         <div className="hidden lg:flex lg:flex-col justify-center">
@@ -65,7 +65,7 @@ export default function BookingServices() {
                                         </div>
                                     </div>
                                 </div>
-                                {IsClick[id] && (
+                                {IsClick[id] &&(
                                     <Popup service_val = {ServiceVal} confirm = {isConfirm} setConfirm = {setIsConfirm} subclick = {IsSubClick} click = {setIsClick} id = {id} handle_sub = {handleSub} service_list = {ser.service} />
                                 )}
                             </>

@@ -8,7 +8,7 @@ import eyelash from "../img/img-sub/eye-lash.jpg"
 import ReviewCarousel from "./ReviewCarousel";
 import CarouselHome from "./Carousel";
 import QuoteCarousel from "./QuoteCarousel";
-import Popup from "../components/Popup";
+// import Popup from "../components/Popup";
 function importImg(r){
     return r.keys().map(r);
 }
@@ -16,7 +16,7 @@ function Home(){
     const fnames = importImg(require.context('../img/img-nail/img-new/' , false , /\.(png|jpg|jpeg)$/));
     return (
         <>
-            <Popup />
+            {/* <Popup /> */}
             <section className="relative overflow-x-hidden space-y-2 lg:space-y-8">
                 <div className="w-screen bg-pageb lg:bg-pagel bg-no-repeat lg:bg-center bg-cover h-screen relative">
                     <Fade cascade delay={150}>

@@ -5,13 +5,13 @@ const ServicesData = [
         'service': [
             {
                 'name': 'Manicure-Classic (15 mins)',
-                'price': '$22',
+                'price': '$25',
                 "imgUrl": require('../../img/services/manicure/1.jpg')
                 
             },
             {
                 'name': 'Manicure Gel And Spa (30mins)',
-                'price': '$50',
+                'price': '$55',
                 "imgUrl": require('../../img/services/manicure/2.jpg')
                 
             },
@@ -26,8 +26,8 @@ const ServicesData = [
                 "imgUrl": require('../../img/services/manicure/4.jpg')
             },
             {
-                'name': 'Change The Polish-Gel (15 mins)',
-                'price': '$30',
+                'name': 'Manicure Buffer Shiny',
+                'price': '$35',
                 "imgUrl": require('../../img/services/manicure/5.jpg')
             },
         ],
@@ -44,7 +44,7 @@ const ServicesData = [
             },
             {
                 'name': 'Pedicure-College (45 Mins)',
-                'price': '$55',
+                'price': '$60',
                 "imgUrl": require('../../img/services/pedicure/2.jpg')
             },
             {
@@ -64,7 +64,7 @@ const ServicesData = [
             },
             {
                 'name': 'Pedicure-Hot Stone (50 Mins)',
-                'price': '$60',
+                'price': '$65',
                 "imgUrl": require('../../img/services/pedicure/6.jpg')
             },
             {
@@ -74,7 +74,7 @@ const ServicesData = [
             },
             {
                 'name': 'Relax Spa(35 Mins)',
-                'price': '$45',
+                'price': '$47',
                 "imgUrl": require('../../img/services/pedicure/5.jpg')
             },
         ],

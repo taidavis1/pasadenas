@@ -27,7 +27,7 @@ export default function BookingMain() {
     const sendInfo = (e) => {
         e.preventDefault();
         if (Name !== '' &&  Phone !== '' && ServiceVal.length > 0 && DateVal !== '' && TechName !== '' && isTime !== ''){
-            axios.post('http://64.23.140.139:8080/api/booking', {
+            axios.post('https://pasadenasapi.tmstart.cloud/api/booking', {
                 name: Name,
                 phone: Phone,
                 services_list: ServiceVal,
@@ -61,28 +61,28 @@ export default function BookingMain() {
                                         {PageId === 2 && (
                                             <div className="flex justify-center space-x-5 lg:space-x-12 py-4">
                                                 <Link to="/Booking/services" className="bg-[#FEE91C] rounded-lg shadow-md ease-in-out transition duration-100 hover:scale-105 text-sm md:text-2xl cursor-pointer px-16 py-2 border-[#FEE91C] border-2 font-serif tracking-wider">
-                                                    <FontAwesomeIcon className="" icon={faArrowLeft} />
+                                                    Back
                                                 </Link>
                                                 <Link to="/Booking/bookingtechnician" className="bg-[#FEE91C] rounded-lg shadow-md ease-in-out transition duration-100 hover:scale-105 text-sm md:text-2xl cursor-pointer px-16 py-2 border-[#FEE91C] border-2 font-serif tracking-wider">
-                                                    <FontAwesomeIcon className="" icon={faArrowRight} />
+                                                    Continue
                                                 </Link>
                                             </div>
                                         )}
                                         {PageId === 3 && (
                                             <div className="flex justify-center space-x-5 lg:space-x-12 py-4">
                                                 <Link to="/Booking/datetime" className="bg-[#FEE91C] rounded-lg shadow-md ease-in-out transition duration-100 hover:scale-105 text-sm md:text-2xl cursor-pointer px-16 py-2 border-[#FEE91C] border-2 font-serif tracking-wider">
-                                                    <FontAwesomeIcon className="" icon={faArrowLeft} />
+                                                    Back
                                                 </Link>
                                                 <Link
                                                     to="/Booking/info" className="bg-[#FEE91C] rounded-lg shadow-md ease-in-out transition duration-100 hover:scale-105 text-sm md:text-2xl cursor-pointer px-16 py-2 border-[#FEE91C] border-2 font-serif tracking-wider">
-                                                    <FontAwesomeIcon className="" icon={faArrowRight} />
+                                                    Continue
                                                 </Link>
                                             </div>
                                         )}
                                         {PageId === 4 && (
                                             <div className="flex justify-center space-x-5 lg:space-x-12 py-4">
                                                 <Link to="/Booking/bookingtechnician" className="bg-[#FEE91C] rounded-lg shadow-md ease-in-out transition duration-100 hover:scale-105 text-sm md:text-2xl cursor-pointer px-16 py-2 border-[#FEE91C] border-2 font-serif tracking-wider">
-                                                    <FontAwesomeIcon className="" icon={faArrowLeft} />
+                                                    Back
                                                 </Link>
 
                                                 <button onClick={(e) => sendInfo(e)} type="submit"  className="bg-[#FEE91C] rounded-lg shadow-md ease-in-out transition duration-100 hover:scale-105 text-sm md:text-2xl cursor-pointer px-16 py-2 border-[#FEE91C] border-2 font-serif tracking-wider">

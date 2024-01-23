@@ -22,7 +22,7 @@ export default function BookingDate() {
     
     const generatetime = async (day, date) => {
         try {
-            const resp = await axios.get(`http://64.23.140.139:8080/api/generatehours/${day}/${date}`);
+            const resp = await axios.get(`https://pasadenasapi.tmstart.cloud/api/generatehours/${day}/${date}`);
             setHours(resp.data.hours)
         } catch (error) {
             console.log("Error: ", error);
