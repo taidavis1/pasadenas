@@ -101,37 +101,37 @@ export default function Footer(){
                             <ul className="mt-8 space-y-4 text-sm">
                                 <li>
                                     <a className=" transition text-black t-underline t-underline-black border-b-yellow-500">
-                                        Mon: 9:00 am - 6:00 pm
+                                        Mon: 10:00 am - 7:30 pm
                                     </a>
                                 </li>
                                 <li>
                                     <a className=" transition text-black t-underline t-underline-black border-b-yellow-500">
-                                        Tues: 9:00 am - 6:00 pm
+                                        Tues: 10:00 am - 7:30 pm
                                     </a>
                                 </li>
                                 <li>
                                     <a className=" transition text-black t-underline t-underline-black border-b-yellow-500">
-                                        Wed: 9:00 am - 6:00 pm
+                                        Wed: 10:00 am - 7:30 pm
                                     </a>
                                 </li>
                                 <li>
                                     <a className=" transition text-black t-underline t-underline-black border-b-yellow-500">
-                                        Thrus: 9:00 am - 6:00 pm
+                                        Thrus: 10:00 am - 7:30 pm
                                     </a>
                                 </li>
                                 <li>
                                     <a className=" transition text-black t-underline t-underline-black border-b-yellow-500">
-                                        Fri: 9:00 am - 6:00 pm
+                                        Fri: 10:00 am - 7:30 pm
                                     </a>
                                 </li>
                                 <li>
                                     <a className=" transition text-black t-underline t-underline-black border-b-yellow-500">
-                                        Sat: 9:00 am - 6:00 pm
+                                        Sat: 9:30 am - 7:00 pm
                                     </a>
                                 </li>
                                 <li>
                                     <a className=" transition text-black t-underline t-underline-black border-b-yellow-500">
-                                        Sun: Closed
+                                        Sun: 11:00 am - 5:00 pm
                                     </a>
                                 </li>
                             </ul>
