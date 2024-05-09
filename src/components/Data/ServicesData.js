@@ -4,25 +4,25 @@ const ServicesData = [
         'servicename': 'Manicure',
         'service': [
             {
-                'name': 'Manicure-Classic (15 mins)',
-                'price': '$25',
+                'name': 'Manicure-Classic',
+                'price': '$22',
                 "imgUrl": require('../../img/services/manicure/1.jpg')
                 
             },
             {
-                'name': 'Manicure Gel And Spa (30mins)',
-                'price': '$55',
+                'name': 'Manicure Gel And Spa',
+                'price': '$50',
                 "imgUrl": require('../../img/services/manicure/2.jpg')
                 
             },
             {
-                'name': 'Change The Basic (10 mins)',
+                'name': 'Change The Basic',
                 'price': '$15',
                 "imgUrl": require('../../img/services/manicure/3.jpg')
             },
             {
-                'name': 'Manicure-Gel (20 mins)',
-                'price': '$40',
+                'name': 'Manicure-Gel',
+                'price': '$37',
                 "imgUrl": require('../../img/services/manicure/4.jpg')
             },
             {
@@ -38,42 +38,42 @@ const ServicesData = [
         'servicename': 'Pedicure',
         'service': [
             {
-                'name': 'Pedicure Basic (30 Mins)',
-                'price': '$37',
+                'name': 'Pedicure Basic',
+                'price': '$35',
                 "imgUrl": require('../../img/services/pedicure/1.jpg')
             },
             {
-                'name': 'Pedicure-College (45 Mins)',
+                'name': 'Pedicure-College',
                 'price': '$60',
                 "imgUrl": require('../../img/services/pedicure/2.jpg')
             },
             {
-                'name': 'Pedicure-Honey (55 Mins)',
+                'name': 'Pedicure-Honey',
                 'price': '$70',
                 "imgUrl": require('../../img/services/pedicure/3.jpg')
             },
             {
-                'name': 'Pedicure-VIP (70 Mins)',
+                'name': 'Pedicure-VIP',
                 'price': '$90',
                 "imgUrl": require('../../img/services/pedicure/4.jpg')
             },
             {
-                'name': 'Pedicure Deluxe  (35 Mins)',
+                'name': 'Pedicure Deluxe',
                 'price': '$50',
                 "imgUrl": require('../../img/services/pedicure/5.jpg')
             },
             {
-                'name': 'Pedicure-Hot Stone (50 Mins)',
+                'name': 'Pedicure-Hot Stone',
                 'price': '$65',
                 "imgUrl": require('../../img/services/pedicure/6.jpg')
             },
             {
-                'name': 'Pedicure-LuXury Spa (55 Mins)',
+                'name': 'Pedicure-LuXury Spa',
                 'price': '$80',
                 "imgUrl": require('../../img/services/pedicure/7.jpg')
             },
             {
-                'name': 'Relax Spa(35 Mins)',
+                'name': 'Relax Spa',
                 'price': '$47',
                 "imgUrl": require('../../img/services/pedicure/5.jpg')
             },
@@ -91,7 +91,7 @@ const ServicesData = [
             },
             {
                 'name': 'Gel Polish Application',
-                'price': '$20',
+                'price': '$15',
                 "imgUrl": require('../../img/services/polishAdd/2.jpg')
             },
             {
@@ -185,7 +185,7 @@ const ServicesData = [
         'service': [
             {
                 'name': 'Acrylic (Regular Polish)',
-                'price': '$46',
+                'price': '$50',
                 "imgUrl": require('../../img/services/fullset/1.jpg')
             },
             {
@@ -195,7 +195,7 @@ const ServicesData = [
             },
             {
                 'name': 'Dipping Powder With Manicure (Tip Add On $5)',
-                'price': '$60',
+                'price': '$50',
                 "imgUrl": require('../../img/services/fullset/3.jpg')
             },
             {
@@ -217,6 +217,11 @@ const ServicesData = [
                 'name': 'Pink & White',
                 'price': '$72',
                 "imgUrl": require('../../img/services/fullset/7.jpg')
+            },
+            {
+                'name': 'Dipping Powder + Gel',
+                'price': '$50',
+                "imgUrl": require('../../img/services/fullset/8.png')
             },
         ],
         "imgPath": require('../../img/services/fullset/1.jpg')
@@ -288,6 +293,14 @@ const ServicesData = [
                 'price': '$15'
             },
             {
+                'name': 'Cut Down Without Services Hands',
+                'price': '$5+'
+            },
+            {
+                'name': 'Cut Down Add Shape',
+                'price': '$5+'
+            },
+            {
                 'name': 'Paraffin Feet',
                 'price': '$15'
             },
@@ -320,23 +333,19 @@ const ServicesData = [
                 'price': '$15'
             },
             {
-                'name': 'Cut Down Without Services Hands',
-                'price': '$10'
-            },
-            {
                 'name': 'Paraffin Hands',
                 'price': '$12'
             },
             {
                 'name': 'French',
-                'price': '$7'
+                'price': '$8+'
             },
             {
                 'name': 'Manicure With Acrylic',
                 'price': '$10'
             },
             {
-                'name': 'Extra Massage 10 Mins/20 Mins',
+                'name': 'Extra Massage',
                 'price': '$20/28'
             },
             {
@@ -442,32 +451,32 @@ const ServicesData = [
         'servicename': 'Eyelash Extension',
         'service': [
             {
-                'name': 'Full Set Individual (1h40 Mins)',
+                'name': 'Full Set Individual',
                 'price':'$170+',
                 "imgUrl": require('../../img/services/eyelash/1.jpg')
             },
             {
-                'name': 'Fill Individual (1h)',
+                'name': 'Fill Individual',
                 'price':'$70+',
                 "imgUrl": require('../../img/services/eyelash/2.jpg')
             },
             {
-                'name': 'Eyelash Removal (10 Mins)',
+                'name': 'Eyelash Removal',
                 'price':'$15',
                 "imgUrl": require('../../img/services/eyelash/3.jpg')
             },
             {
-                'name': 'Full Set Cluster (40 Mins)',
+                'name': 'Full Set Cluster',
                 'price':'$70+',
                 "imgUrl": require('../../img/services/eyelash/4.jpg')
             },
             {
-                'name': 'Fill Cluster (30 Mins)',
+                'name': 'Fill Cluster',
                 'price':'$40+',
                 "imgUrl": require('../../img/services/eyelash/5.jpg')
             },
             {
-                'name': 'Eyebrow Wax & Tint (20 Mins)',
+                'name': 'Eyebrow Wax & Tint',
                 'price':'$35',
                 "imgUrl": require('../../img/services/eyelash/6.jpg')
             },
