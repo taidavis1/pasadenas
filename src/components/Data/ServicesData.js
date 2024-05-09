@@ -190,7 +190,7 @@ const ServicesData = [
             },
             {
                 'name': 'Dipping Powder (Tip Add On $5)',
-                'price': '$50',
+                'price': '$50+',
                 "imgUrl": require('../../img/services/fullset/2.jpg')
             },
             {
